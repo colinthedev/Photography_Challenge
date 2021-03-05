@@ -1,0 +1,55 @@
+.templateContainer {
+    display: grid;
+    background: var(--color-background-white);
+    grid-template-rows: 10vh minmax(auto, 29.4rem) minmax(42rem, auto) minmax(27.1rem, auto) minmax(42rem, auto) minmax(27rem, auto) minmax(42rem, auto) repeat(4, minmax(37.5rem, auto)) minmax(80.2rem, auto) minmax(54rem, auto);
+    grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
+}
+
+.inviteContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-row: 3 / 4;
+    grid-column: full-start / full-end;
+    background: var(--color-background-black);
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 7.2rem 2.4rem 7.2rem 3.3rem;
+}
+
+.contentWrapperSml {
+    display: flex;
+    flex-direction: column;
+    margin: 23.6rem 6.2rem 4rem 3.3rem;
+}
+
+.storieOneContainer {
+    grid-row: 5 / 6;
+    grid-column: full-start / full-end;
+}
+
+.storieTwoContainer {
+    grid-row: 7 / 8;
+    grid-column: full-start / full-end;
+}
+
+.mountainsContainer {
+    grid-row: 8 / 9;
+    grid-column: full-start / full-end;
+    background-image: url(../../assets/stories/mobile/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cityScapeContainer {
+    grid-row: 9 / 10;
+    grid-column: full-start / full-end;
+    background-image: url(../../assets/stories/mobile/cityscapes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

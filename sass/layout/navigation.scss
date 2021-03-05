@@ -1,0 +1,6 @@
+.headerContainer {
+    background: var(--color-background-white);
+    color: var(--color-text-black);
+    grid-row: 1 / 2;
+    grid-column: full-start / full-end;
+}

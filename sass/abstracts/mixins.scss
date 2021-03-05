@@ -1,0 +1,196 @@
+//Headings
+.headingXLargeWht {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.25rem;
+    line-height: 4.8rem;
+    letter-spacing: 4.17px;
+    font-weight: 700;
+    color: var(--color-text-white);
+}
+
+.headingXLargeBlk {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.75rem;
+    line-height: 4.8rem;
+    letter-spacing: 4.17px;
+    font-weight: 700;
+    color: var(--color-text-black);
+}
+
+.headingLarge {
+
+}
+
+.headingMedium {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 25px;
+    font-weight: 700;
+    color: var(--color-text-white);
+}
+
+.headingSmall {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 17px;
+    font-weight: 400;
+    color: var(--color-text-white);
+}
+//Headings END
+
+//Summary TXT
+@mixin summaryTxt {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 25px;
+    opacity: 0.6;
+    margin-top: 1.6rem;
+}
+
+.summaryWhite {
+    @include summaryTxt();
+    color: var(--color-text-white);
+}
+
+.summaryBlack {
+    @include summaryTxt();
+    color: var(--color-text-black);
+}
+//Summary TXT END
+
+//Arrow Row Container
+.rowSml { //Arrow link on index page
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 1.6rem;
+    margin: 2.3rem 0 0 0;
+}
+//Arrow Row Container END
+
+//Arrow Mixins
+@mixin arrowTxt {
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 16rem;
+    letter-spacing: 2px;
+}
+
+@mixin arrow {
+    cursor: pointer;
+    width: 4.2rem;
+    height: .12rem;
+    margin-left: 1.8rem;
+    position: relative;
+}
+
+@mixin arrowPseudoLine {
+    content: "";
+    position: absolute;
+    height: .12rem;
+    width: 12px;
+}
+
+.arrowPoint:before {
+    right: -2.7px;
+    bottom: -3.9px;
+    transform: rotate(-45deg);
+}
+
+.arrowPoint:after {
+    right: -2.7px;
+    bottom: 3.9px;
+    transform: rotate(45deg);
+}
+//Arrow Mixins END
+
+//White Arrow
+.arrowTxtWht {
+    @include arrowTxt();
+    color: var(--color-text-white);
+}
+
+.arrowWht {
+    @include arrow();
+    background: #ffffff;
+}
+
+.arrowWht:before,
+.arrowWht:after {
+    @include arrowPseudoLine();
+    background: #fff;
+}
+
+//White Arrow END
+
+//Black Arrow
+.arrowTxtBlk {
+    @include arrowTxt();
+    color: var(--color-text-black);
+}
+
+.arrowBlk {
+    @include arrow();
+    background: #000000;
+}
+
+.arrowBlk:before,
+.arrowBlk:after {
+    @include arrowPseudoLine();
+    background: #000000;
+}
+//Black Arrow END
+
+//White Arrow Big Gap
+.arrowBigGap {
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 16rem;
+    letter-spacing: 2px;
+    color: var(--color-text-white);
+}
+
+.arrowBigGap {
+    cursor: pointer;
+    width: 4.2rem;
+    height: .12rem;
+    margin-left: auto;
+    background: #ffffff;
+    position: relative;
+}
+
+.arrowBigGap:before,
+.arrowBigGap:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    height: .12rem;
+    width: 12px;
+}
+
+.arrowBigGap:before {
+    right: -2.7px;
+    bottom: -3.9px;
+    transform: rotate(-45deg);
+}
+
+.arrowBigGap:after {
+    right: -2.7px;
+    bottom: 3.9px;
+    transform: rotate(45deg);
+}
+
+//Line Break
+.lineBreak {
+    height: 1px;
+    width: 31rem;
+    background: #ffffff;
+    opacity: .25;
+    margin-top: 1.6rem;
+}
+//Line Break End
+
