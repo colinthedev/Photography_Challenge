@@ -1,7 +1,7 @@
 .templateContainer {
     display: grid;
     background: var(--color-background-white);
-    grid-template-rows: 10vh minmax(auto, 29.4rem) minmax(42rem, auto) minmax(27.1rem, auto) minmax(42rem, auto) minmax(27rem, auto) minmax(42rem, auto) repeat(4, minmax(37.5rem, auto)) minmax(80.2rem, auto) minmax(54rem, auto);
+    grid-template-rows: 10vh minmax(auto, 29.4rem) minmax(42rem, auto) minmax(27.1rem, auto) minmax(42rem, auto) minmax(27rem, auto) minmax(42rem, auto) repeat(4, minmax(37.5rem, auto)) minmax(96rem, auto) minmax(54rem, auto);
     grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
 }
 
@@ -36,20 +36,57 @@
     grid-column: full-start / full-end;
 }
 
+//IMG Story Section
 .mountainsContainer {
     grid-row: 8 / 9;
-    grid-column: full-start / full-end;
     background-image: url(../../assets/stories/mobile/mountains.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include backgroundImageProperties();
 }
 
 .cityScapeContainer {
     grid-row: 9 / 10;
-    grid-column: full-start / full-end;
     background-image: url(../../assets/stories/mobile/cityscapes.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include backgroundImageProperties();
 }
+
+.daysVoyageContainer {
+    grid-row: 10 / 11;
+    background-image: url(../../assets/stories/mobile/18-days-voyage.jpg);
+    @include backgroundImageProperties();
+}
+
+.architecturalsContainer {
+    grid-row: 11 / 12;
+    background-image: url(../../assets/stories/mobile/architecturals.jpg);
+    @include backgroundImageProperties();
+}
+//IMG Story Section
+
+//SVG Section
+.svgRowContainer {
+    grid-row: 12 / 13;
+    grid-column: full-start / full-end;
+}
+
+.contentWrapperSVG {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 3.2rem 5.6rem 3.3rem;
+}
+//SVG Section END
+
+//Footer Section
+.footerContainer {
+    grid-row: 13 / 14;
+    grid-column: full-start / full-end;
+    background: var(--color-background-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerWrapperBig {
+    margin-bottom: 9.6rem;
+}
+//Footer Section END

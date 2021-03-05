@@ -1,43 +1,3 @@
-//Headings
-.headingXLargeWht {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 3.25rem;
-    line-height: 4.8rem;
-    letter-spacing: 4.17px;
-    font-weight: 700;
-    color: var(--color-text-white);
-}
-
-.headingXLargeBlk {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 3.75rem;
-    line-height: 4.8rem;
-    letter-spacing: 4.17px;
-    font-weight: 700;
-    color: var(--color-text-black);
-}
-
-.headingLarge {
-
-}
-
-.headingMedium {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.8rem;
-    line-height: 25px;
-    font-weight: 700;
-    color: var(--color-text-white);
-}
-
-.headingSmall {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.3rem;
-    line-height: 17px;
-    font-weight: 400;
-    color: var(--color-text-white);
-}
-//Headings END
-
 //Summary TXT
 @mixin summaryTxt {
     font-family: 'DM Sans', sans-serif;
@@ -46,6 +6,11 @@
     line-height: 25px;
     opacity: 0.6;
     margin-top: 1.6rem;
+}
+
+.summaryCenter {
+    width: 31rem;
+    text-align: center;
 }
 
 .summaryWhite {
@@ -61,6 +26,7 @@
 
 //Arrow Row Container
 .rowSml { //Arrow link on index page
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -124,6 +90,10 @@
     background: #fff;
 }
 
+.arrowTxtWht:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #ffffff;
+}
 //White Arrow END
 
 //Black Arrow
@@ -142,55 +112,33 @@
     @include arrowPseudoLine();
     background: #000000;
 }
+
+.arrowTxtBlk:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #000000;
+}
 //Black Arrow END
 
 //White Arrow Big Gap
 .arrowBigGap {
-    font-family: DM Sans;
-    font-weight: bold;
-    font-size: 1.2rem;
-    line-height: 16rem;
-    letter-spacing: 2px;
-    color: var(--color-text-white);
-}
-
-.arrowBigGap {
-    cursor: pointer;
-    width: 4.2rem;
-    height: .12rem;
+    @include arrow();
     margin-left: auto;
     background: #ffffff;
-    position: relative;
 }
 
 .arrowBigGap:before,
 .arrowBigGap:after {
-    content: "";
+    @include arrowPseudoLine();
     background: #fff;
-    position: absolute;
-    height: .12rem;
-    width: 12px;
 }
+//White Arrow Big Gap END
 
-.arrowBigGap:before {
-    right: -2.7px;
-    bottom: -3.9px;
-    transform: rotate(-45deg);
+//Background Image Properties
+@mixin backgroundImageProperties {
+    grid-column: full-start / full-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-
-.arrowBigGap:after {
-    right: -2.7px;
-    bottom: 3.9px;
-    transform: rotate(45deg);
-}
-
-//Line Break
-.lineBreak {
-    height: 1px;
-    width: 31rem;
-    background: #ffffff;
-    opacity: .25;
-    margin-top: 1.6rem;
-}
-//Line Break End
+//Background Image Properties END
 
