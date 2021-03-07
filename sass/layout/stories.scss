@@ -1,0 +1,117 @@
+
+.storiesContainer {
+    display: grid;
+    background: var(--color-background-black);
+    grid-template-rows: 10vh minmax(auto, 31.7rem) minmax(49.5rem, auto ) repeat(16, minmax(37.5rem, auto)) minmax(54rem, auto);
+    grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
+}
+
+.dateAuthorWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.storiesMountainsContainer {
+    grid-row: 4 / 5;
+    background-image: url(../../assets/stories/mobile/mountains.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesCityScapeContainer {
+    grid-row: 5 / 6;
+    background-image: url(../../assets/stories/mobile/cityscapes.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesDaysVoyageContainer {
+    grid-row: 6 / 7;
+    background-image: url(../../assets/stories/mobile/18-days-voyage.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesArchitecturalsContainer {
+    grid-row: 7 / 8;
+    background-image: url(../../assets/stories/mobile/architecturals.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesWorldTourContainer {
+    grid-row: 8 / 9;
+    background-image: url(../../assets/stories/mobile/world-tour.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesUnforseenContainer {
+    grid-row: 9 / 10;
+    background-image: url(../../assets/stories/mobile/unforeseen-corners.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesKingAfricaContainer {
+    grid-row: 10 / 11;
+    background-image: url(../../assets/stories/mobile/king-on-africa.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesTripNowhereContainer {
+    grid-row: 11 / 12;
+    background-image: url(../../assets/stories/mobile/trip-to-nowhere.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesRageSeaContainer {
+    grid-row: 12 / 13;
+    background-image: url(../../assets/stories/mobile/rage-of-the-sea.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesRunningFreeContainer {
+    grid-row: 13 / 14;
+    background-image: url(../../assets/stories/mobile/running-free.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesBehindWavesContainer {
+    grid-row: 14 / 15;
+    background-image: url(../../assets/stories/mobile/behind-the-waves.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesCalmWatersContainer {
+    grid-row: 15 / 16;
+    background-image: url(../../assets/stories/mobile/calm-waters.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesMilkyWayContainer {
+    grid-row: 16 / 17;
+    background-image: url(../../assets/stories/mobile/milky-way.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesDarkForestContainer {
+    grid-row: 17 / 18;
+    background-image: url(../../assets/stories/mobile/dark-forest.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesSomwarpetsContainer {
+    grid-row: 18 / 19;
+    background-image: url(../../assets/stories/mobile/somwarpet.jpg);
+    @include backgroundImageProperties();
+}
+
+.storiesLandOfContainer {
+    grid-row: 19 / 20;
+    background-image: url(../../assets/stories/mobile/land-of-dreams.jpg);
+    @include backgroundImageProperties();
+}
+
+//Footer Section
+.storiesFooterContainer {
+    grid-row: 20 / 21;
+    @include footerContainerProperties();
+}
+//Footer Section END

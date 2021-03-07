@@ -6,123 +6,274 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+
   <link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
-<body>
+<body class="storiesContainer">
+  <header class="headerContainer">
+    <div class="logoContainer headerCntr">
+      <div class="logoContainer__logo"></div>
+      <span style="color:black" class="headingBrand">PHOTOSNAP</span>
+    </div>
+  </header>
+  <div class="topImgContainer">
+    <img src="/assets/stories/mobile/moon-of-appalacia.jpg" alt="Mountains" class="topImgContainer__topImg">
+  </div>
 
-  Stories
-  Features
-  Pricing
+  <div class="topMostContainer">
+    <div class="contentWrapper">
+      <span class="headingSmallBold">LAST MONTHS FEATURED STORY</span>
+      <span class="headingXLargeWht">HAZY FULL MOON OF APPALACHIA</span>
+        <div class="dateAuthorWrapper">
+          <span class="headingSmallFaded">March 2nd 2020</span>
+          <span class="headingSmall">by John Appleseed</span>
+        </div>
+      <p class="summaryWhite">The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.</p>
+      <div class="rowSml">
+        <span class="arrowTxtWht">READ THE STORY</span>
+        <button href="#" class="arrowWht arrowPoint"></button>
+      </div>
+    </div>
+  </div>
+  <div class="storiesMountainsContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">April 16th 2020</div>
+      <span class="headingMedium">The Mountains</span>
+      <span class="headingSmall">by John Appleseed</span>
+      <div class="lineBreak"></div>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  Get an invite
+  <div class="storiesCityScapeContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">April 14th 2020</div>
+      <span class="headingMedium">Sunset Cityscapes</span>
+      <span class="headingSmall">by Benjamin Cruz</span>
+      <div class="lineBreak"></div>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  Last month's featured story
+  <div class="storiesDaysVoyageContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">April 11th 2020</div>
+      <span class="headingMedium">18 Days Voyage</span>
+      <span class="headingSmall">by Alexei Borodin</span>
+      <div class="lineBreak"></div>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  Hazy full moon of Appalachia
-  March 2nd 2020
-  by John Appleseed
+  <div class="storiesArchitecturalsContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">April 9th 2020</div>
+      <span class="headingMedium">Architecturals</span>
+      <span class="headingSmall">by Samantha Brooke</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  The dissected plateau area, while not actually made up of geological mountains, 
-  is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
-  and while the ridges are not high, the terrain is extremely rugged.
+  <div class="storiesWorldTourContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">April 7th 2020</div>
+      <span class="headingMedium">World Tour 2019</span>
+      <span class="headingSmall">by Timothy Wagner</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  Read the story
+  <div class="storiesUnforseenContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">April 3rd 2020</div>
+      <span class="headingMedium">Unforseen Corners</span>
+      <span class="headingSmall">by William Malcolm</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  April 16th 2020
-  The Mountains
-  by John Appleseed
-  Read Story
+  <div class="storiesKingAfricaContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">March 29th 2020</div>
+      <span class="headingMedium">King on Africa:Part II</span>
+      <span class="headingSmall">by Tim Hillenburg</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  April 14th 2020
-  Sunset Cityscapes
-  by Benjamin Cruz
-  Read Story
+  <div class="storiesTripNowhereContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">March 21st 2020</div>
+      <span class="headingMedium">The Trip to Nowhere</span>
+      <span class="headingSmall">by Felicia Rourke</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  April 11th 2020
-  18 Days Voyage
-  by Alexei Borodin
-  Read Story
+  <div class="storiesRageSeaContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">March 19th 2020</div>
+      <span class="headingMedium">Rage of The Sea</span>
+      <span class="headingSmall">by Mohammed Abdul</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  April 9th 2020
-  Architecturals
-  by Samantha Brooke
-  Read Story
+  <div class="storiesRunningFreeContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">March 16th 2020</div>
+      <span class="headingMedium">Running Free</span>
+      <span class="headingSmall">by Michelle</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
+  <div class="storiesBehindWavesContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">March 11th 2020</div>
+      <span class="headingMedium">Behind the Waves</span>
+      <span class="headingSmall">by Lamar Wilson</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
+  <div class="storiesCalmWatersContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">March 9th 2020</div>
+      <span class="headingMedium">Calm Waters</span>
+      <span class="headingSmall">by Samantha Brooke</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  April 3rd 2020
-  Unforeseen Corners
-  by William Malcolm
-  Read Story
+  <div class="storiesMilkyWayContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">March 5th 2020</div>
+      <span class="headingMedium">The Milky Way</span>
+      <span class="headingSmall">by Benjamin Cruz</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  March 29th 2020
-  King on Africa: Part II
-  by Tim Hillenburg
-  Read Story
+  <div class="storiesDarkForestContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">March 4th 2020</div>
+      <span class="headingMedium">Night at The Dark Forest</span>
+      <span class="headingSmall">by Mohammed Abdul</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  March 21st 2020
-  The Trip to Nowhere
-  by Felicia Rourke
-  Read Story
+  <div class="storiesSomwarpetsContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">March 1st 2020</div>
+      <span class="headingMedium">Somwarpet's Beauty</span>
+      <span class="headingSmall">by Michelle</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  March 19th 2020
-  Rage of The Sea
-  by Mohammed Abdul
-  Read Story
+  <div class="storiesLandOfContainer">
+    <div class="contentWrapperSml">
+      <div style="margin-bottom: .4rem" class="headingSmall">February 25th 2020</div>
+      <span class="headingMedium">Land of Dreams</span>
+      <span class="headingSmall">by William Malcolm</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">READ STORY</span>
+          <button href="#" class="arrowBigGap arrowPoint"></button>
+        </div>
+    </div>
+  </div>
 
-  March 16th 2020
-  Running Free
-  by Michelle
-  Read Story
-
-  March 11th 2020
-  Behind the Waves
-  by Lamarr Wilson
-  Read Story
-
-  March 9th 2020
-  Calm Waters
-  by Samantha Brooke
-  Read Story
-
-  March 5th 2020
-  The Milky Way
-  by Benjamin Cruz
-  Read Story
-
-  March 4th 2020
-  Night at The Dark Forest
-  by  Mohammed Abdul
-  Read Story
-
-  March 1st 2020
-  Somwarpet’s Beauty
-  by Michelle
-  Read Story
-
-  February 25th 2020
-  Land of Dreams
-  by William Malcolm
-  Read Story
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
+  <footer class="storiesFooterContainer">
+    <div class="footerWrapperBig">
+      <div class="logoContainer footerCntr">
+        <div class="logoContainer__logo"></div>
+        <span class="headingBrand">PHOTOSNAP</span>
+      </div>
+      <div class="iconContainer">
+        <a href="https://www.facebook.com/" rel="external" target="_blank">
+          <img href="https://www.facebook.com/" src="assets/shared/mobile/elegantfacebook.svg" alt="facebook icon" class="iconContainer__icon">
+        </a>
+        <a href="https://www.youtube.com/" rel="external" target="_blank">
+          <img src="assets/shared/mobile/elegantyoutube.svg" alt="youtube icon" class="iconContainer__icon">
+        </a>
+        <a href="https://twitter.com/homepint" rel="external" target="_blank">
+          <img src="assets/shared/mobile/eleganttwitter.svg" alt="twitter icon" class="iconContainer__icon">
+        </a>
+        <a href="https://www.pinterest.com/" rel="external" target="_blank">
+          <img src="assets/shared/mobile/elegantpintrest.svg" alt="pintrest icon" class="iconContainer__icon">
+        </a>
+        <a href="https://www.instagram.com/" rel="external" target="_blank">
+          <img src="assets/shared/mobile/elegantinstagram.svg" alt="instagram icon" class="iconContainer__icon">
+        </a>
+      </div>
+      <div class="footerLinksContainer">
+        <ul class="summaryCenter">
+          <li class="footerLinksContainer__txt" href="#">HOME</li>
+          <li class="footerLinksContainer__txt" href="#">STORIES</li>
+          <li class="footerLinksContainer__txt" href="#">FEATURES</li>
+          <li class="footerLinksContainer__txt" href="#">PRICING</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerWrapperSml">
+      <div class="rowSml">
+        <span class="arrowTxtWht">GET AN INVITE</span>
+        <button href="#" class="arrowWht arrowPoint"></button>
+      </div>
+      <div class="copywriteTxt">Copyright 2021. All Rights Reserved</div>
+    </div>
+  </footer>
 
 </body>
 </html>

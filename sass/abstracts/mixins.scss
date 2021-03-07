@@ -142,3 +142,11 @@
 }
 //Background Image Properties END
 
+//Footer Container 
+@mixin footerContainerProperties {
+    grid-column: full-start / full-end;
+    background: var(--color-background-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

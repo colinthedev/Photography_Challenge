@@ -1,11 +1,11 @@
-.templateContainer {
+.indexContainer {
     display: grid;
     background: var(--color-background-white);
     grid-template-rows: 10vh minmax(auto, 29.4rem) minmax(42rem, auto) minmax(27.1rem, auto) minmax(42rem, auto) minmax(27rem, auto) minmax(42rem, auto) repeat(4, minmax(37.5rem, auto)) minmax(96rem, auto) minmax(54rem, auto);
     grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
 }
 
-.inviteContainer {
+.topMostContainer {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -79,11 +79,7 @@
 //Footer Section
 .footerContainer {
     grid-row: 13 / 14;
-    grid-column: full-start / full-end;
-    background: var(--color-background-black);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include footerContainerProperties();
 }
 
 .footerWrapperBig {
