@@ -1,0 +1,6 @@
+.featuresContainer {
+    display: grid;
+    background: var(--color-background-white);
+    grid-template-rows: 10vh minmax(auto, 29.4rem) minmax(30rem, auto) minmax(183rem, auto) minmax(28.8rem, auto) minmax(54rem, auto);
+    grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
+}

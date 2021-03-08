@@ -24,18 +24,6 @@
 }
 //Summary TXT END
 
-//Arrow Row Container
-.rowSml { //Arrow link on index page
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    height: 1.6rem;
-    margin: 2.3rem 0 0 0;
-}
-//Arrow Row Container END
-
 //Arrow Mixins
 @mixin arrowTxt {
     font-family: DM Sans;

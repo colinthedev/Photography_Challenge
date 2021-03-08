@@ -5,38 +5,39 @@
     grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
 }
 
-.topMostContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    grid-row: 3 / 4;
+.imgContainerBeautiful {
+    grid-row: 4 / 5;
     grid-column: full-start / full-end;
-    background: var(--color-background-black);
+
+    &__beautifulImg {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
 }
 
-.contentWrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 7.2rem 2.4rem 7.2rem 3.3rem;
+.imgContainerDesigned {
+    grid-row: 6 / 7;
+    grid-column: full-start / full-end;
+
+    &__designedImg {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
 }
 
-.contentWrapperSml {
-    display: flex;
-    flex-direction: column;
-    margin: 23.6rem 6.2rem 4rem 3.3rem;
-}
-
-.storieOneContainer {
+.viewStorieOneContainer {
     grid-row: 5 / 6;
     grid-column: full-start / full-end;
 }
 
-.storieTwoContainer {
+.viewStorieTwoContainer {
     grid-row: 7 / 8;
     grid-column: full-start / full-end;
 }
 
-//IMG Story Section
+//IMG Read Story Section
 .mountainsContainer {
     grid-row: 8 / 9;
     background-image: url(../../assets/stories/mobile/mountains.jpg);
@@ -60,29 +61,11 @@
     background-image: url(../../assets/stories/mobile/architecturals.jpg);
     @include backgroundImageProperties();
 }
-//IMG Story Section
+//IMG Read Story Section END
 
 //SVG Section
-.svgRowContainer {
+.indexSvgRowContainer {
     grid-row: 12 / 13;
     grid-column: full-start / full-end;
 }
-
-.contentWrapperSVG {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 8rem 3.2rem 5.6rem 3.3rem;
-}
 //SVG Section END
-
-//Footer Section
-.footerContainer {
-    grid-row: 13 / 14;
-    @include footerContainerProperties();
-}
-
-.footerWrapperBig {
-    margin-bottom: 9.6rem;
-}
-//Footer Section END

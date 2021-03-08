@@ -6,6 +6,7 @@
     grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
 }
 
+//IMG Read Story Section
 .dateAuthorWrapper {
     display: flex;
     flex-direction: row;
@@ -108,10 +109,3 @@
     background-image: url(../../assets/stories/mobile/land-of-dreams.jpg);
     @include backgroundImageProperties();
 }
-
-//Footer Section
-.storiesFooterContainer {
-    grid-row: 20 / 21;
-    @include footerContainerProperties();
-}
-//Footer Section END

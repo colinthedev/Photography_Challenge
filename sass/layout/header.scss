@@ -1,0 +1,12 @@
+.headerContainer {
+    background: var(--color-background-white);
+    color: var(--color-text-black);
+    grid-row: 1 / 2;
+    grid-column: full-start / full-end;
+    display: flex;
+}
+
+.headerCntr { //Center TXT
+    margin-left: 2.4rem;
+    color: #000000;
+}

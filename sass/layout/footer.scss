@@ -1,0 +1,51 @@
+//Index Footer Section
+.footerContainer {
+    grid-row: 13 / 14;
+    @include footerContainerProperties();
+}
+//Index Footer Section
+
+//Stories Footer Section
+.storiesFooterContainer {
+    grid-row: 20 / 21;
+    @include footerContainerProperties();
+}
+//Stories Footer Section END
+
+//Footer Classes
+.footerWrapperBig {
+    margin-bottom: 9.6rem;
+}
+
+.footerCntr {
+    justify-content: center;
+    margin: 5.6rem 0 3.2rem 0;
+    color: #ffffff;
+}
+
+.iconContainer { //Footer social media icons
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 15.4rem;
+    margin: 0 auto 6.4rem auto;
+
+    &__icon {
+        cursor: pointer;
+        display: block;
+        height: 20;
+        width: 20;
+    }
+}
+
+.footerLinksContainer__txt { //Footer Links
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 15px;
+    letter-spacing: 2px;
+    margin-top: 1.6rem;
+    color: #ffffff;
+}
+//Footer Classes END
