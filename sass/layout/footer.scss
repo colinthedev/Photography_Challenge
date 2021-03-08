@@ -12,6 +12,12 @@
 }
 //Stories Footer Section END
 
+//Features Footer Section
+.featuresFooterContainer {
+    grid-row: 6 / 7;
+    @include footerContainerProperties();
+}
+
 //Footer Classes
 .footerWrapperBig {
     margin-bottom: 9.6rem;

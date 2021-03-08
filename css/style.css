@@ -5,28 +5,6 @@
   opacity: .25;
   margin-top: 1.6rem; }
 
-.summaryCenter {
-  width: 31rem;
-  text-align: center; }
-
-.summaryWhite {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 25px;
-  opacity: 0.6;
-  margin-top: 1.6rem;
-  color: var(--color-text-white); }
-
-.summaryBlack {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 25px;
-  opacity: 0.6;
-  margin-top: 1.6rem;
-  color: var(--color-text-black); }
-
 .arrowPoint:before {
   right: -2.7px;
   bottom: -3.9px;
@@ -525,6 +503,14 @@ template {
   font-weight: 700;
   color: var(--color-text-white); }
 
+.headingLargeWht {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 3.25rem;
+  line-height: 4rem;
+  letter-spacing: 3.33px;
+  font-weight: 700;
+  color: var(--color-text-white); }
+
 .headingXLargeBlk {
   font-family: 'DM Sans', sans-serif;
   font-size: 3.75rem;
@@ -581,6 +567,28 @@ template {
   color: var(--color-text-white);
   margin-bottom: 1.6rem; }
 
+.summaryCenter {
+  width: 31rem;
+  text-align: center; }
+
+.summaryWhite {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 25px;
+  opacity: 0.6;
+  margin-top: 1.6rem;
+  color: var(--color-text-white); }
+
+.summaryBlack {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 25px;
+  opacity: 0.6;
+  margin-top: 1.6rem;
+  color: var(--color-text-black); }
+
 .footerContainer {
   grid-row: 13 / 14;
   grid-column: full-start / full-end;
@@ -591,6 +599,14 @@ template {
 
 .storiesFooterContainer {
   grid-row: 20 / 21;
+  grid-column: full-start / full-end;
+  background: var(--color-background-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.featuresFooterContainer {
+  grid-row: 6 / 7;
   grid-column: full-start / full-end;
   background: var(--color-background-black);
   display: flex;
@@ -643,6 +659,18 @@ template {
   background: var(--color-background-white);
   grid-template-rows: 10vh minmax(auto, 29.4rem) minmax(30rem, auto) minmax(183rem, auto) minmax(28.8rem, auto) minmax(54rem, auto);
   grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem) [col-end]) [center-end] auto [full-end]; }
+
+.featuresSvgRowContainer {
+  grid-row: 4 / 5;
+  grid-column: full-start / full-end; }
+
+.betaContainer {
+  grid-row: 5 / 6;
+  background-image: url(../../assets/shared/mobile/bg-beta.jpg);
+  grid-column: full-start / full-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .indexContainer {
   display: grid;

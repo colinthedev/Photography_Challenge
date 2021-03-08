@@ -7,21 +7,6 @@
     opacity: 0.6;
     margin-top: 1.6rem;
 }
-
-.summaryCenter {
-    width: 31rem;
-    text-align: center;
-}
-
-.summaryWhite {
-    @include summaryTxt();
-    color: var(--color-text-white);
-}
-
-.summaryBlack {
-    @include summaryTxt();
-    color: var(--color-text-black);
-}
 //Summary TXT END
 
 //Arrow Mixins

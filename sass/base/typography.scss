@@ -8,6 +8,15 @@
     color: var(--color-text-white);
 }
 
+.headingLargeWht {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.25rem;
+    line-height: 4rem;
+    letter-spacing: 3.33px;
+    font-weight: 700;
+    color: var(--color-text-white);
+}
+
 .headingXLargeBlk {
     font-family: 'DM Sans', sans-serif;
     font-size: 3.75rem;
@@ -71,3 +80,20 @@
     margin-bottom: 1.6rem;
 }
 //Headings END
+
+//Summary Txt
+.summaryCenter {
+    width: 31rem;
+    text-align: center;
+}
+
+.summaryWhite {
+    @include summaryTxt();
+    color: var(--color-text-white);
+}
+
+.summaryBlack {
+    @include summaryTxt();
+    color: var(--color-text-black);
+}
+//Summary Txt END
