@@ -1,11 +1,84 @@
 //Line Break
-.lineBreak {
+.lineBreakFaded {
     height: 1px;
     width: 31rem;
     background: #ffffff;
     opacity: .25;
     margin-top: 1.6rem;
 }
+
+.lineBreakBlk {
+    height: 1px;
+    width: 31rem;
+    background: #000000;
+    margin: 2.35rem 0 2.35rem 0;
+}
+
+.lineBreakGrey {
+    height: 1px;
+    width: 31rem;
+    background: #DFDFDF;
+    margin: 2.35rem 0 2.35rem 0;
+}
 //Line Break End
 
+//Rainbow Rectangle
+.rainbowRectangleSml {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2.9rem;
+    height: 6px;
+    width: 14rem;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+}
+//Rainbow Rectangle END
 
+//Features Section Check Mark
+.checkMark {
+    display: block;
+    height: 12px;
+    width: 16px;
+}
+//Features Section Check Mark END
+
+//Pricing Toggle 
+.toggleWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    height: 100%;
+
+    &__buttonBackground {
+        display: flex;
+        align-items: center;
+        width: 6.4rem;
+        height: 3.4rem;
+        border-radius: 1.6rem;
+        background: var(--color-background-grey);
+    }
+
+    &__button {
+        cursor: pointer;
+        display: block;
+        margin-left: .5rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 50%;
+        background: var(--color-text-btnblack);
+    }
+}
+//Pricing Toggle END
+
+//Pick Plan Button
+.pickPlanBtnBlk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24.5rem;
+    height: 4rem;
+    background: var(--color-background-btnblack);
+}

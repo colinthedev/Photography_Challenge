@@ -17,6 +17,13 @@
     grid-row: 6 / 7;
     @include footerContainerProperties();
 }
+//Features Footer Section END
+
+//Pricing Footer Section
+.pricingFooterContainer {
+    grid-row: 10 / 11;
+    @include footerContainerProperties();
+}
 
 //Footer Classes
 .footerWrapperBig {

@@ -6,73 +6,298 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+
   <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
-<body>
-
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Pricing
-
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
-
-  Monthly
-  Yearly
-
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
-
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
-
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
-
-  The Features
-
-  Basic
-  Pro
-  Business
-
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
-
-  We're in Beta. Get your invite today!
+<body class="pricingContainer">
+  <header class="headerContainer">
+    <div class="logoContainer headerCntr">
+      <div class="logoContainer__logo"></div>
+      <span style="color:black" class="headingBrand">PHOTOSNAP</span>
+    </div>
+  </header>
   
-  Get an invite
+  <div class="topImgContainer">
+    <img src="/assets/pricing/mobile/hero.jpg" alt="hero img" class="topImgContainer__topImg">
+  </div>
+  <div class="topTxtContainer">
+    <div class="rainbowRectangleSml"></div>
+    <div class="contentWrapper">
+      <span class="headingXLargeWht">PRICING</span>
+      <p class="summaryWhite">Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.</p>
+    </div>
+  </div>
 
-  Home
-  Stories
-  Features
-  Pricing
+    <div class="toggleContainer">
+      <div class="toggleWrapper">
+        <span class="headingMediumBlk">Monthly</span>
+        <div class="toggleWrapper">
+          <div class="toggleWrapper__buttonBackground">
+            <div href="#" class="toggleWrapper__button"></div>
+          </div>
+        </div>
+        <span style="opacity:0.5" class="headingMediumBlk">Yearly</span>
+      </div>
+    </div>
 
-  Get an invite
+    <div class="basicPricePlanContainer">
+      <div class="pricePlanWrapper">
+        <div class="headingPriceWrapper">
+          <span class="headingPriceBlk">Basic</span>
+        </div>
+        <div class="summaryWrapper">
+          <p class="summaryBlack summaryCenter">Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+        </div>
+        <div class="priceAmountWrapper">
+          <span class="pricePlanAmountBlk">$19.00</span>
+          <span class="pricePerMonthTxtBlk">per month</span>
+        </div>
+        <div class="pickPlanBtnBlk pickPlanBtnTxtWht">PICK PLAN</div>
+      </div>
+    </div>
 
-  Copyright 2019. All Rights Reserved
+    <div class="proPricePlanContainer">
+      <div class="pricePlanWrapper">
+        <div class="headingPriceWrapper">
+          <span class="headingPriceWht">Pro</span>
+        </div>
+        <div class="summaryWrapper">
+          <p class="summaryWhite summaryCenter">More advanced features available. Recommended for photography veterans and professionals.</p>
+        </div>
+        <div class="priceAmountWrapper">
+          <span class="pricePlanAmountWht">$39.00</span>
+          <span class="pricePerMonthTxtWht">per month</span>
+        </div>
+        <div class="pickPlanBtnBlk pickPlanBtnTxtWht">PICK PLAN</div>
+      </div>
+    </div>
 
+    <div class="businessPricePlanContainer">
+      <div class="pricePlanWrapper">
+        <div class="headingPriceWrapper">
+          <span class="headingPriceBlk">Business</span>
+        </div>
+        <div class="summaryWrapper">
+          <p class="summaryBlack summaryCenter">Additional features available such as more detailed metrics. Recommended for business owners.</p>
+        </div>
+        <div class="priceAmountWrapper">
+          <span class="pricePlanAmountBlk">$99.00</span>
+          <span class="pricePerMonthTxtBlk">per month</span>
+        </div>
+        <div class="pickPlanBtnBlk pickPlanBtnTxtWht">PICK PLAN</div>
+      </div>
+    </div>
+
+    <div class="theFeaturesContainer">
+      <div class="featuresWrapperHeading">
+        <span class="headingFeaturesLrg">THE FEATURES</span>
+        <div class="lineBreakBlk"></div>
+      </div>
+      <div class="featuresWrapperHeading">
+        <span class="headingFeaturesLrg">UNLIMITED STORY POSTING</span>
+        <div class="lineBreakGrey"></div>
+      </div>
+      <div class="featuresWrapperLrg">
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BASIC</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">PRO</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BUSINESS</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+      </div>
+      <div class="lineBreakGrey"></div>
+
+      <div class="featuresWrapperHeading">
+        <span class="headingFeaturesLrg">UNLIMITED PHOTO UPLOAD</span>
+        <div class="lineBreakGrey"></div>
+      </div>
+      <div class="featuresWrapperLrg">
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BASIC</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">PRO</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BUSINESS</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+      </div>
+      <div class="lineBreakGrey"></div>
+
+      <div class="featuresWrapperHeading">
+        <span class="headingFeaturesLrg">EMBEDDING CUSTOM CONTENT</span>
+        <div class="lineBreakGrey"></div>
+      </div>
+      <div class="featuresWrapperLrg">
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BASIC</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">PRO</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BUSINESS</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+      </div>
+      <div class="lineBreakGrey"></div>
+
+      <div class="featuresWrapperHeading">
+        <span class="headingFeaturesLrg">CUSTOMIZE METADATA</span>
+        <div class="lineBreakGrey"></div>
+      </div>
+      <div class="featuresWrapperLrg">
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BASIC</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">PRO</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BUSINESS</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+      </div>
+      <div class="lineBreakGrey"></div>
+
+      <div class="featuresWrapperHeading">
+        <span class="headingFeaturesLrg">ADVANCED METRICS</span>
+        <div class="lineBreakGrey"></div>
+      </div>
+      <div class="featuresWrapperLrg">
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BASIC</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">PRO</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BUSINESS</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+      </div>
+      <div class="lineBreakGrey"></div>
+
+      <div class="featuresWrapperHeading">
+        <span class="headingFeaturesLrg">PHOTO DOWNLOADS</span>
+        <div class="lineBreakGrey"></div>
+      </div>
+      <div class="featuresWrapperLrg">
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BASIC</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">PRO</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BUSINESS</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+      </div>
+      <div class="lineBreakGrey"></div>
+
+      <div class="featuresWrapperHeading">
+        <span class="headingFeaturesLrg">SEARCH ENGINE INDEXING</span>
+        <div class="lineBreakGrey"></div>
+      </div>
+      <div class="featuresWrapperLrg">
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BASIC</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">PRO</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BUSINESS</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+      </div>
+      <div class="lineBreakGrey"></div>
+
+      <div class="featuresWrapperHeading">
+        <span class="headingFeaturesLrg">CUSTOM ANALYTICS</span>
+        <div class="lineBreakGrey"></div>
+      </div>
+      <div class="featuresWrapperLrg">
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BASIC</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">PRO</span>
+        </div>
+        <div class="featuresWrapperSml">
+          <span class="headingFeaturesSml">BUSINESS</span>
+          <img src="assets/pricing/desktop/check.svg" alt="Check Mark" class="checkMark">
+        </div>
+      </div>
+      <div class="lineBreakGrey"></div>
+    </div>
+
+    <div class="pricingBetaContainer">
+      <div class="rainbowRectangleSml"></div>
+      <div class="contentWrapper">
+        <span class="headingLargeWht">WE'RE IN BETA. GET YOUR INVITE TODAY!</span>
+        <div class="rowSml">
+          <span class="arrowTxtWht">GET AN INVITE</span>
+          <button href="#" class="arrowWht arrowPoint"></button>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="pricingFooterContainer">
+      <div class="footerWrapperBig">
+        <div class="logoContainer footerCntr">
+          <div class="logoContainer__logo"></div>
+          <span class="headingBrand">PHOTOSNAP</span>
+        </div>
+        <div class="iconContainer">
+          <a href="https://www.facebook.com/" rel="external" target="_blank">
+            <img href="https://www.facebook.com/" src="assets/shared/mobile/elegantfacebook.svg" alt="facebook icon" class="iconContainer__icon">
+          </a>
+          <a href="https://www.youtube.com/" rel="external" target="_blank">
+            <img src="assets/shared/mobile/elegantyoutube.svg" alt="youtube icon" class="iconContainer__icon">
+          </a>
+          <a href="https://twitter.com/homepint" rel="external" target="_blank">
+            <img src="assets/shared/mobile/eleganttwitter.svg" alt="twitter icon" class="iconContainer__icon">
+          </a>
+          <a href="https://www.pinterest.com/" rel="external" target="_blank">
+            <img src="assets/shared/mobile/elegantpintrest.svg" alt="pintrest icon" class="iconContainer__icon">
+          </a>
+          <a href="https://www.instagram.com/" rel="external" target="_blank">
+            <img src="assets/shared/mobile/elegantinstagram.svg" alt="instagram icon" class="iconContainer__icon">
+          </a>
+        </div>
+        <div class="footerLinksContainer">
+          <ul class="summaryCenter">
+            <li class="footerLinksContainer__txt" href="#">HOME</li>
+            <li class="footerLinksContainer__txt" href="#">STORIES</li>
+            <li class="footerLinksContainer__txt" href="#">FEATURES</li>
+            <li class="footerLinksContainer__txt" href="#">PRICING</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerWrapperSml">
+        <div class="rowSml">
+          <span class="arrowTxtWht">GET AN INVITE</span>
+          <button href="#" class="arrowWht arrowPoint"></button>
+        </div>
+        <div class="copywriteTxt">Copyright 2021. All Rights Reserved</div>
+      </div>
+    </footer>
 </body>
 </html>

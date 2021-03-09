@@ -1,4 +1,31 @@
 //Headings
+.pricePlanAmountBlk {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: 4.17px;
+    font-weight: 700;
+    color: var(--color-text-black);
+}
+
+.pricePlanAmountWht {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: 4.17px;
+    font-weight: 700;
+    color: var(--color-text-white);
+}
+
+.headingXLargeBlk {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.75rem;
+    line-height: 4.8rem;
+    letter-spacing: 4.17px;
+    font-weight: 700;
+    color: var(--color-text-black);
+}
+
 .headingXLargeWht {
     font-family: 'DM Sans', sans-serif;
     font-size: 3.25rem;
@@ -17,13 +44,20 @@
     color: var(--color-text-white);
 }
 
-.headingXLargeBlk {
+.headingPriceBlk {
     font-family: 'DM Sans', sans-serif;
-    font-size: 3.75rem;
-    line-height: 4.8rem;
-    letter-spacing: 4.17px;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
     font-weight: 700;
     color: var(--color-text-black);
+}
+
+.headingPriceWht {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text-white);
 }
 
 .headingBrand {
@@ -40,6 +74,14 @@
     line-height: 25px;
     font-weight: 700;
     color: var(--color-text-white);
+}
+
+.headingMediumBlk {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 25px;
+    font-weight: 700;
+    color: var(--color-text-black);
 }
 
 .svgHeading {
@@ -79,6 +121,26 @@
     color: var(--color-text-white);
     margin-bottom: 1.6rem;
 }
+
+.headingFeaturesLrg {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 15.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-text-black);
+}
+
+.headingFeaturesSml {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 13px;
+    font-weight: 700;
+    letter-spacing: 1.67px;
+    color: var(--color-text-black);
+    opacity: 50%;
+    margin-bottom: .8rem;
+}
 //Headings END
 
 //Summary Txt
@@ -96,4 +158,32 @@
     @include summaryTxt();
     color: var(--color-text-black);
 }
+
+.pricePerMonthTxtBlk {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 25px;
+    opacity: 0.6;
+    color: var(--color-text-black);
+}
+
+.pricePerMonthTxtWht {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 25px;
+    opacity: 0.6;
+    color: var(--color-text-white);
+}
 //Summary Txt END
+
+//Button Txt
+.pickPlanBtnTxtWht {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: var(--color-text-btnwhite);
+}
+//Button Txt END
