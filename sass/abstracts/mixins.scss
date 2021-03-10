@@ -106,6 +106,16 @@
 }
 //White Arrow Big Gap END
 
+//Footer Container 
+@mixin footerContainerProperties {
+    grid-column: full-start / full-end;
+    background: var(--color-background-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+//Footer Container END
+
 //Background Image Properties
 @mixin backgroundImageProperties {
     grid-column: full-start / full-end;
@@ -115,11 +125,30 @@
 }
 //Background Image Properties END
 
-//Footer Container 
-@mixin footerContainerProperties {
-    grid-column: full-start / full-end;
-    background: var(--color-background-black);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+//Rainbow Rectangle 
+@mixin rainbowRectangle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
 }
+//Rainbow Rectangle END
+
+//Pick Plan Button
+@mixin solidButtonTxt {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+
+@mixin solidButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24.5rem;
+    height: 4rem;
+}
+//Pick Plan Button END

@@ -24,14 +24,14 @@
 
 //Rainbow Rectangle
 .rainbowRectangleSml {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 2.9rem;
-    height: 6px;
+    @include rainbowRectangle();
     width: 14rem;
-    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    margin-left: 2.9rem;
+}
+
+.rainbowRectangleFull {
+    @include rainbowRectangle();
+    width: 100%;
 }
 //Rainbow Rectangle END
 
@@ -75,10 +75,12 @@
 
 //Pick Plan Button
 .pickPlanBtnBlk {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24.5rem;
-    height: 4rem;
+    @include solidButton();
     background: var(--color-background-btnblack);
 }
+
+.pickPlanBtnWht {
+    @include solidButton();
+    background: var(--color-background-btnwhite);
+}
+//Pick Plan Button END

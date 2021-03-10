@@ -180,10 +180,12 @@
 
 //Button Txt
 .pickPlanBtnTxtWht {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.2rem;
-    line-height: 15px;
-    letter-spacing: 2px;
+    @include solidButtonTxt();
     color: var(--color-text-btnwhite);
+}
+
+.pickPlanBtnTxtBlk {
+    @include solidButtonTxt();
+    color: var(--color-text-btnblack);
 }
 //Button Txt END
