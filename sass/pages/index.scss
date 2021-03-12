@@ -5,11 +5,40 @@
     grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
 }
 
+.topImgContainer {
+    grid-row: 2 / 3;
+    grid-column: full-start / full-end;
+
+    &__topImgTablet {
+        display: none;
+    }
+
+    &__topImgMobile {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.topTxtContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-row: 3 / 4;
+    grid-column: full-start / full-end;
+    background: var(--color-background-black);
+}
+
 .imgContainerBeautiful {
     grid-row: 4 / 5;
     grid-column: full-start / full-end;
+    
+    &__beautifulImgTablet {
+        display: none;
+    }
 
-    &__beautifulImg {
+    &__beautifulImgMobile {
         display: block;
         height: 100%;
         width: 100%;
@@ -20,7 +49,11 @@
     grid-row: 6 / 7;
     grid-column: full-start / full-end;
 
-    &__designedImg {
+    &__designedImgTablet {
+        display: none;
+    }
+
+    &__designedImgMobile {
         display: block;
         height: 100%;
         width: 100%;

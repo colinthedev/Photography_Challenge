@@ -16,27 +16,6 @@
 }
 //Header + Footer logo END
 
-.topImgContainer {
-    grid-row: 2 / 3;
-    grid-column: full-start / full-end;
-
-    &__topImg {
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
-}
-
-.topTxtContainer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    grid-row: 3 / 4;
-    grid-column: full-start / full-end;
-    background: var(--color-background-black);
-}
-
 .contentWrapper {
     display: flex;
     flex-direction: column;

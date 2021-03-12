@@ -175,23 +175,6 @@
     background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
 
-.topImgContainer {
-  grid-row: 2 / 3;
-  grid-column: full-start / full-end; }
-  .topImgContainer__topImg {
-    display: block;
-    height: 100%;
-    width: 100%; }
-
-.topTxtContainer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  grid-row: 3 / 4;
-  grid-column: full-start / full-end;
-  background: var(--color-background-black); }
-
 .contentWrapper {
   display: flex;
   flex-direction: column;
@@ -736,6 +719,14 @@ template {
   opacity: 0.6;
   color: var(--color-text-white); }
 
+.copywriteTxt {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 19.5px;
+  color: var(--color-text-white);
+  opacity: .5; }
+
 .pickPlanBtnTxtWht {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.2rem;
@@ -848,10 +839,31 @@ template {
   grid-template-rows: 10vh minmax(auto, 29.4rem) minmax(42rem, auto) minmax(27.1rem, auto) minmax(42rem, auto) minmax(27rem, auto) minmax(42rem, auto) repeat(4, minmax(37.5rem, auto)) minmax(96rem, auto) minmax(54rem, auto);
   grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem) [col-end]) [center-end] auto [full-end]; }
 
+.topImgContainer {
+  grid-row: 2 / 3;
+  grid-column: full-start / full-end; }
+  .topImgContainer__topImgTablet {
+    display: none; }
+  .topImgContainer__topImgMobile {
+    display: block;
+    height: 100%;
+    width: 100%; }
+
+.topTxtContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3 / 4;
+  grid-column: full-start / full-end;
+  background: var(--color-background-black); }
+
 .imgContainerBeautiful {
   grid-row: 4 / 5;
   grid-column: full-start / full-end; }
-  .imgContainerBeautiful__beautifulImg {
+  .imgContainerBeautiful__beautifulImgTablet {
+    display: none; }
+  .imgContainerBeautiful__beautifulImgMobile {
     display: block;
     height: 100%;
     width: 100%; }
@@ -859,7 +871,9 @@ template {
 .imgContainerDesigned {
   grid-row: 6 / 7;
   grid-column: full-start / full-end; }
-  .imgContainerDesigned__designedImg {
+  .imgContainerDesigned__designedImgTablet {
+    display: none; }
+  .imgContainerDesigned__designedImgMobile {
     display: block;
     height: 100%;
     width: 100%; }
@@ -1118,5 +1132,161 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+@media screen and (min-width: 768px) {
+  .indexContainer {
+    grid-template-rows: 10vh minmax(65rem, auto) repeat(2, minmax(60rem, auto)) repeat(2, minmax(50rem, auto)) minmax(101.5rem, auto) minmax(28.4rem, auto);
+    grid-template-columns: [full-start] minmax(27.3rem, auto) repeat(8, [col-start] minmax(min-content, 5rem) [col-end]) minmax(27.3rem, auto) [full-end]; }
+
+  .headingXLargeWht {
+    font-size: 4rem; }
+
+  .headingXLargeBlk {
+    font-size: 4rem; }
+
+  .arrowTxtWht {
+    line-height: 0; }
+
+  .summaryWhite {
+    margin-bottom: 2.4rem; }
+
+  .summaryBlack {
+    margin-bottom: 2.4rem; }
+
+  .rowSml {
+    margin: 2rem 0 0 0; }
+
+  .contentWrapperSml {
+    margin: 100% 6.2rem 4rem 3.3rem; }
+
+  .rainbowRectangleSml {
+    display: block;
+    position: absolute;
+    top: 315px;
+    left: 0;
+    height: 6px;
+    width: 304px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    transform: rotate(90deg) translateY(175px); }
+
+  .topImgContainer {
+    grid-column: 10 / full-end; }
+    .topImgContainer__topImgMobile {
+      display: none; }
+    .topImgContainer__topImgTablet {
+      display: block;
+      height: 100%;
+      width: 100%; }
+
+  .topTxtContainer {
+    grid-row: 2 / 3;
+    grid-column: full-start / 10; }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 17.3rem 5.4rem 17.3rem 5.4rem; }
+
+  .imgContainerBeautiful {
+    grid-row: 3 / 4;
+    grid-column: full-start / col-start; }
+    .imgContainerBeautiful__beautifulImgTablet {
+      display: block;
+      height: 100%;
+      width: 100%; }
+    .imgContainerBeautiful__beautifulImgMobile {
+      display: none; }
+
+  .viewStorieOneContainer {
+    grid-row: 3 / 4;
+    grid-column: col-start / full-end; }
+
+  .imgContainerDesigned {
+    grid-row: 4 / 5;
+    grid-column: 10 / full-end; }
+    .imgContainerDesigned__designedImgTablet {
+      display: block;
+      height: 100%;
+      width: 100%; }
+    .imgContainerDesigned__designedImgMobile {
+      display: none; }
+
+  .viewStorieTwoContainer {
+    grid-row: 4 / 5;
+    grid-column: full-start / 10; }
+
+  .mountainsContainer {
+    grid-row: 5 / 6;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/mobile/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+  .cityScapeContainer {
+    grid-row: 5 / 6;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/mobile/cityscapes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+  .daysVoyageContainer {
+    grid-row: 6 / 7;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/mobile/18-days-voyage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+  .architecturalsContainer {
+    grid-row: 6 / 7;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/mobile/architecturals.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+  .indexSvgRowContainer {
+    grid-row: 7 / 8;
+    grid-column: full-start / full-end; }
+
+  .footerContainer {
+    grid-row: 8 / 9;
+    grid-column: full-start / full-end;
+    background: var(--color-background-black);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+
+  .footerWrapperSml {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%; }
+
+  .footerWrapperBig {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    margin-left: 3.9rem;
+    margin: 0 0 6.4rem 3.9rem; }
+
+  .iconContainer {
+    order: 3;
+    margin: 7.2rem 0 0 0; }
+
+  ul.summaryCenter {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+
+  .footerLinksContainer__txt {
+    margin-right: 2.6rem;
+    margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */

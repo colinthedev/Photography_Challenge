@@ -1,0 +1,196 @@
+@media screen and (min-width: 768px) {
+    .indexContainer {
+        grid-template-rows: 10vh minmax(65rem, auto) repeat(2, minmax(60rem, auto)) repeat(2, minmax(50rem, auto)) minmax(101.5rem, auto) minmax(28.4rem, auto);
+        // grid-template-columns: [full-start] 1fr repeat(20, [col-start] minmax(min-content, 5rem)[col-end]) 1fr [full-end];
+        grid-template-columns: [full-start] minmax(27.3rem, auto) repeat(8, [col-start] minmax(min-content, 5rem)[col-end]) minmax(27.3rem, auto) [full-end];
+    }
+
+    //Typography
+    .headingXLargeWht {
+        font-size: 4rem;
+    }
+
+    .headingXLargeBlk {
+        font-size: 4rem;
+    }
+    //Typography END
+
+    //Mixins
+    .arrowTxtWht {
+        line-height: 0;
+    }
+
+    .summaryWhite {
+        margin-bottom: 2.4rem;
+    }
+
+    .summaryBlack {
+        margin-bottom: 2.4rem;
+    }
+    //Mixins END
+
+    //Utilities
+    .rowSml {
+        margin: 2rem 0 0 0;
+    }
+
+    .contentWrapperSml {
+        margin: 100% 6.2rem 4rem 3.3rem;
+    }
+    //Utilities END
+
+    //Components
+    .rainbowRectangleSml {
+        @include rainbowRectangleTablet();
+    }
+    //Components END
+
+    //Top Img Top Txt Containers
+    .topImgContainer {
+        grid-column: 10 / full-end;
+
+        &__topImgMobile {
+            display: none;
+        }
+
+        &__topImgTablet {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .topTxtContainer {
+        grid-row: 2 / 3;
+        grid-column: full-start / 10;
+    }
+
+    .contentWrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 17.3rem 5.4rem 17.3rem 5.4rem;
+    }
+    //Top Img Top Txt Containers END
+
+    //Beautiful Img Storie One Container
+    .imgContainerBeautiful {
+        grid-row: 3 / 4;
+        grid-column: full-start / col-start;
+        
+        &__beautifulImgTablet {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    
+        &__beautifulImgMobile {
+            display: none;
+        }
+    }
+
+    .viewStorieOneContainer {
+        grid-row: 3 / 4;
+        grid-column: col-start / full-end;
+    }
+    //Beautiful Img Storie One Container END
+
+    //Designed Img Storie Two Container 
+    .imgContainerDesigned {
+        grid-row: 4 / 5;
+        grid-column: 10 / full-end;
+    
+        &__designedImgTablet {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    
+        &__designedImgMobile {
+            display: none;
+        }
+    }
+    
+    .viewStorieTwoContainer {
+        grid-row: 4 / 5;
+        grid-column: full-start / 10;
+    }
+
+    //IMG Read Story Section
+    .mountainsContainer {
+        grid-row: 5 / 6;
+        grid-column: full-start / 6;
+        background-image: url(../../assets/stories/mobile/mountains.jpg);
+        @include backgroundImagePropertiesTablet();
+    }
+
+    .cityScapeContainer {
+        grid-row: 5 / 6;
+        grid-column: 6 / full-end;
+        background-image: url(../../assets/stories/mobile/cityscapes.jpg);
+        @include backgroundImagePropertiesTablet();
+    }
+
+    .daysVoyageContainer {
+        grid-row: 6 / 7;
+        grid-column: full-start / 6;
+        background-image: url(../../assets/stories/mobile/18-days-voyage.jpg);
+        @include backgroundImagePropertiesTablet();
+    }
+
+    .architecturalsContainer {
+        grid-row: 6 / 7;
+        grid-column: 6 / full-end;
+        background-image: url(../../assets/stories/mobile/architecturals.jpg);
+        @include backgroundImagePropertiesTablet();
+    }
+    //IMG Read Story Section END
+
+    //SVG Container
+    .indexSvgRowContainer {
+        grid-row: 7 / 8;
+        grid-column: full-start / full-end;
+    }
+    //SVG Container END
+
+    //Index Footer Section
+    .footerContainer {
+        grid-row: 8 / 9;
+        @include footerContainerPropertiesTablet();
+    }
+    
+    .footerWrapperSml {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 50%;
+    }
+
+    .footerWrapperBig {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 50%;
+        margin-left: 3.9rem;
+        margin: 0 0 6.4rem 3.9rem;
+    }
+
+    .iconContainer {
+        order: 3;
+        margin: 7.2rem 0 0 0;
+    }
+
+    ul.summaryCenter {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .footerLinksContainer__txt {
+        margin-right: 2.6rem;
+        margin-top: 0;
+    }
+    //Index Footer Section
+}

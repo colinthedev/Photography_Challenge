@@ -7,14 +7,13 @@
 @import "sass/base/reset.scss";
 @import "sass/base/typography.scss";
 
-
 @import "sass/layout/footer.scss";
 @import "sass/layout/header.scss";
 @import "sass/layout/navigation.scss";
-
-@import "sass/mediaQueries/mediaQueries.scss";
 
 @import "sass/pages/features.scss";
 @import "sass/pages/index.scss";
 @import "sass/pages/pricing.scss";
 @import "sass/pages/stories.scss";
+
+@import "sass/mediaQueries/mediaQueries.scss";
