@@ -1,4 +1,5 @@
 @media screen and (min-width: 768px) {
+    //Index Page START
     .indexContainer {
         grid-template-rows: 10vh minmax(65rem, auto) repeat(2, minmax(60rem, auto)) repeat(2, minmax(50rem, auto)) minmax(101.5rem, auto) minmax(28.4rem, auto);
         // grid-template-columns: [full-start] 1fr repeat(20, [col-start] minmax(min-content, 5rem)[col-end]) 1fr [full-end];
@@ -152,45 +153,5 @@
     }
     //SVG Container END
 
-    //Index Footer Section
-    .footerContainer {
-        grid-row: 8 / 9;
-        @include footerContainerPropertiesTablet();
-    }
-    
-    .footerWrapperSml {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 100%;
-        width: 50%;
-    }
-
-    .footerWrapperBig {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%;
-        margin-left: 3.9rem;
-        margin: 0 0 6.4rem 3.9rem;
-    }
-
-    .iconContainer {
-        order: 3;
-        margin: 7.2rem 0 0 0;
-    }
-
-    ul.summaryCenter {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .footerLinksContainer__txt {
-        margin-right: 2.6rem;
-        margin-top: 0;
-    }
-    //Index Footer Section
+    //Index Page END
 }

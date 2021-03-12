@@ -1,0 +1,50 @@
+//Index Footer Section
+   .footerContainer {
+    grid-row: 8 / 9;
+    @include footerContainerPropertiesTablet();
+}
+//Index Footer Section END
+
+//Stories Footer Section
+.storiesFooterContainer {
+    grid-row: 10 / 11;
+    @include footerContainerPropertiesTablet();
+}
+//Stories Footer Section END
+
+//Tablet Footer Section Shared Properties
+.footerWrapperSml {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+}
+
+.footerWrapperBig {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    margin-left: 3.9rem;
+    margin: 0 0 6.4rem 3.9rem;
+}
+
+.iconContainer {
+    order: 3;
+    margin: 7.2rem 0 0 0;
+}
+
+ul.summaryCenter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.footerLinksContainer__txt {
+    margin-right: 2.6rem;
+    margin-top: 0;
+}
+//Tablet Footer Section Shared Properties END

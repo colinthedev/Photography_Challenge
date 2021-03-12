@@ -6,6 +6,31 @@
     grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
 }
 
+.topImgContainerFull {
+    grid-row: 2 / 3;
+    grid-column: full-start / full-end;
+
+    &__topImgTablet {
+        display: none;
+    }
+
+    &__topImgMobile {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.topTxtContainerFull {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-row: 3 / 4;
+    grid-column: full-start / full-end;
+    background: var(--color-background-black);
+}
+
 //IMG Read Story Section
 .dateAuthorWrapper {
     display: flex;

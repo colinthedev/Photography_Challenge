@@ -999,6 +999,25 @@ template {
   grid-template-rows: 10vh minmax(auto, 31.7rem) minmax(49.5rem, auto) repeat(16, minmax(37.5rem, auto)) minmax(54rem, auto);
   grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem) [col-end]) [center-end] auto [full-end]; }
 
+.topImgContainerFull {
+  grid-row: 2 / 3;
+  grid-column: full-start / full-end; }
+  .topImgContainerFull__topImgTablet {
+    display: none; }
+  .topImgContainerFull__topImgMobile {
+    display: block;
+    height: 100%;
+    width: 100%; }
+
+.topTxtContainerFull {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3 / 4;
+  grid-column: full-start / full-end;
+  background: var(--color-background-black); }
+
 .dateAuthorWrapper {
   display: flex;
   flex-direction: row;
@@ -1133,6 +1152,52 @@ template {
   background-size: cover;
   background-position: center; }
 
+.footerContainer {
+  grid-row: 8 / 9;
+  grid-column: full-start / full-end;
+  background: var(--color-background-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.storiesFooterContainer {
+  grid-row: 10 / 11;
+  grid-column: full-start / full-end;
+  background: var(--color-background-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.footerWrapperSml {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 50%; }
+
+.footerWrapperBig {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 3.9rem;
+  margin: 0 0 6.4rem 3.9rem; }
+
+.iconContainer {
+  order: 3;
+  margin: 7.2rem 0 0 0; }
+
+ul.summaryCenter {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+
+.footerLinksContainer__txt {
+  margin-right: 2.6rem;
+  margin-top: 0; }
+
 @media screen and (min-width: 768px) {
   .indexContainer {
     grid-template-rows: 10vh minmax(65rem, auto) repeat(2, minmax(60rem, auto)) repeat(2, minmax(50rem, auto)) minmax(101.5rem, auto) minmax(28.4rem, auto);
@@ -1249,44 +1314,111 @@ template {
 
   .indexSvgRowContainer {
     grid-row: 7 / 8;
-    grid-column: full-start / full-end; }
+    grid-column: full-start / full-end; } }
+@media screen and (min-width: 768px) {
+  .storiesContainer {
+    grid-template-rows: 10vh minmax(65rem, auto) repeat(7, minmax(50rem, auto)) minmax(28.4rem, auto);
+    grid-template-columns: [full-start] minmax(3.9rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3.9rem, 1fr) [full-end]; }
 
-  .footerContainer {
-    grid-row: 8 / 9;
+  .topTxtContainerFull {
+    grid-row: 2 / 3;
     grid-column: full-start / full-end;
-    background: var(--color-background-black);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
+    grid-column: full-start / full-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../assets/stories/tablet/moon-of-appalacia.jpg); }
+    .topTxtContainerFull__topImgMobile {
+      display: none; }
+    .topTxtContainerFull__topImgTablet {
+      display: block;
+      height: 100%;
+      width: 100%;
+      z-index: -1; }
 
-  .footerWrapperSml {
+  .contentWrapperTablet {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    width: 50%; }
+    margin: 12.2rem 34.2rem 12.2rem 3.9rem; }
 
-  .footerWrapperBig {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 50%;
-    margin-left: 3.9rem;
-    margin: 0 0 6.4rem 3.9rem; }
+  .storiesMountainsContainer {
+    grid-row: 3 / 4;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/desktop/mountains.jpg); }
 
-  .iconContainer {
-    order: 3;
-    margin: 7.2rem 0 0 0; }
+  .storiesCityScapeContainer {
+    grid-row: 3 / 4;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/desktop/cityscapes.jpg); }
 
-  ul.summaryCenter {
-    display: flex;
-    flex-direction: row;
-    width: 100%; }
+  .storiesDaysVoyageContainer {
+    grid-row: 4 / 5;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/desktop/18-days-voyage.jpg); }
 
-  .footerLinksContainer__txt {
-    margin-right: 2.6rem;
-    margin-top: 0; } }
+  .storiesArchitecturalsContainer {
+    grid-row: 4 / 5;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/desktop/architecturals.jpg); }
+
+  .storiesWorldTourContainer {
+    grid-row: 5 / 6;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/desktop/world-tour.jpg); }
+
+  .storiesUnforseenContainer {
+    grid-row: 5 / 6;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/desktop/unforeseen-corners.jpg); }
+
+  .storiesKingAfricaContainer {
+    grid-row: 5 / 6;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/desktop/king-on-africa.jpg); }
+
+  .storiesTripNowhereContainer {
+    grid-row: 5 / 6;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/desktop/trip-to-nowhere.jpg); }
+
+  .storiesRageSeaContainer {
+    grid-row: 6 / 7;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/desktop/rage-of-the-sea.jpg); }
+
+  .storiesRunningFreeContainer {
+    grid-row: 6 / 7;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/desktop/running-free.jpg); }
+
+  .storiesBehindWavesContainer {
+    grid-row: 7 / 8;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/desktop/behind-the-waves.jpg); }
+
+  .storiesCalmWatersContainer {
+    grid-row: 7 / 8;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/desktop/calm-waters.jpg); }
+
+  .storiesMilkyWayContainer {
+    grid-row: 8 / 9;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/desktop/milky-way.jpg); }
+
+  .storiesDarkForestContainer {
+    grid-row: 8 / 9;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/desktop/dark-forest.jpg); }
+
+  .storiesSomwarpetsContainer {
+    grid-row: 9 / 10;
+    grid-column: full-start / 6;
+    background-image: url(../../assets/stories/desktop/somwarpet.jpg); }
+
+  .storiesLandOfContainer {
+    grid-row: 9 / 10;
+    grid-column: 6 / full-end;
+    background-image: url(../../assets/stories/desktop/land-of-dreams.jpg); } }
 
 /*# sourceMappingURL=style.css.map */
