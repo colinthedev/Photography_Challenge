@@ -1,0 +1,61 @@
+
+@media screen and (min-width: 768px) {
+
+    .pricingContainer {
+        display: grid;
+        background: var(--color-background-white);
+        grid-template-rows: 10vh minmax(auto, 49rem) minmax(13.6rem, auto) repeat(3, minmax(40.7rem, auto)) minmax(95rem, auto) minmax(28.8rem, auto) minmax(28.4rem, auto);
+        grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
+
+        // grid-template-columns: [full-start] minmax(27.3rem, auto) repeat(8, [col-start] minmax(min-content, 5rem)[col-end]) minmax(27.3rem, auto) [full-end];
+    }
+
+    //Toggle Button Container
+    .toggleContainer {
+        grid-row: 3 / 4;
+        grid-column: full-start / full-end;
+    }
+    //Toggle Button Container END
+
+    //Pricing Plans
+    .basicPricePlanContainer {
+        grid-row: 4 / 5;
+        grid-column: full-start / full-end;
+        margin: 0 4rem 2.4rem 3.9rem;
+    }
+
+    .proPricePlanContainer {
+        grid-row: 5 / 6;
+        grid-column: full-start / full-end;
+        margin: 0 4rem 2.4rem 3.9rem;    
+    }
+
+    .businessPricePlanContainer {
+        grid-row: 6 / 7;
+        grid-column: full-start / full-end;
+        margin: 2.4rem 4rem 2.4rem 3.9rem;
+    }
+
+
+    //The Features
+    .theFeaturesContainer {
+        grid-row: 7 / 8;
+        grid-column: full-start / full-end;
+        margin: 6.4rem 4rem 0 3.9rem;
+    }
+
+    .lineBreakBlk {
+        width: 100%;
+    }
+
+    .lineBreakGrey {
+        width: 100%;
+    }
+    //The Features END
+
+    .pricingBetaContainer {
+        grid-row: 8 / 9;
+        background-image: url(../../assets/shared/tablet/bg-beta.jpg);
+    }
+
+}

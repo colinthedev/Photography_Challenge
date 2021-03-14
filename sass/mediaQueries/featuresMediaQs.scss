@@ -1,0 +1,57 @@
+
+@media screen and (min-width: 768px) {
+
+    .featuresContainer {
+        display: grid;
+        background: var(--color-background-white);
+        grid-template-rows: 10vh minmax(49rem, auto) minmax(70.8rem, auto) minmax(28rem, auto) minmax(28.4rem, auto);
+        grid-template-columns: [full-start] minmax(27.3rem, auto) repeat(8, [col-start] minmax(min-content, 5rem)[col-end]) minmax(27.3rem, auto) [full-end];
+    }
+
+    .topImgContainer {
+        grid-row: 2 / 3;
+        grid-column: full-start / full-end;
+        z-index: 100;
+
+        &__topImgTablet {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__topImgMobile {
+            display: none;
+        }
+    }
+
+    .topTxtContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        grid-row: 2 / 3;
+        grid-column: full-start / full-end;
+        background: var(--color-background-black);
+    }
+
+    .featuresSvgRowContainer {
+        grid-row: 3 / 4;
+        grid-column: full-start / full-end;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .featuresSvgRowContainer > * {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .featuresBetaContainer {
+        grid-row: 4 / 5;
+        grid-column: full-start / full-end;
+        background-image: url(../../assets/shared/tablet/bg-beta.jpg);
+    }
+}
