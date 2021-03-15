@@ -141,6 +141,22 @@
     opacity: 50%;
     margin-bottom: .8rem;
 }
+
+.compareHeadingFeatures {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 4rem;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: 4.17px;
+    color: var(--color-text-black);
+    margin-bottom: .8rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 6.5rem auto;
+    grid-row: 1 / 2;
+    grid-column: full-start / full-end;
+}
 //Headings END
 
 //Summary Txt

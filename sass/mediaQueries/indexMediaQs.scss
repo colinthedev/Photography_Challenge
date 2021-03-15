@@ -1,5 +1,4 @@
 @media screen and (min-width: 768px) {
-    //Index Page START
     .indexContainer {
         grid-template-rows: 10vh minmax(65rem, auto) repeat(2, minmax(60rem, auto)) repeat(2, minmax(50rem, auto)) minmax(101.5rem, auto) minmax(28.4rem, auto);
         // grid-template-columns: [full-start] 1fr repeat(20, [col-start] minmax(min-content, 5rem)[col-end]) 1fr [full-end];
@@ -59,6 +58,10 @@
             height: 100%;
             width: 100%;
         }
+
+        &__topImgDesktop {
+            display: none;
+        }
     }
 
     .topTxtContainer {
@@ -77,14 +80,18 @@
     .imgContainerBeautiful {
         grid-row: 3 / 4;
         grid-column: full-start / col-start;
+
+        &__beautifulImgMobile {
+            display: none;
+        }
         
         &__beautifulImgTablet {
             display: block;
             height: 100%;
             width: 100%;
         }
-    
-        &__beautifulImgMobile {
+
+        &__beautifulImgDesktop {
             display: none;
         }
     }
@@ -99,6 +106,10 @@
     .imgContainerDesigned {
         grid-row: 4 / 5;
         grid-column: 10 / full-end;
+
+        &__designedImgMobile {
+            display: none;
+        }
     
         &__designedImgTablet {
             display: block;
@@ -106,7 +117,7 @@
             width: 100%;
         }
     
-        &__designedImgMobile {
+        &__designedImgDesktop {
             display: none;
         }
     }
@@ -152,6 +163,95 @@
         grid-column: full-start / full-end;
     }
     //SVG Container END
+}
 
-    //Index Page END
+@media screen and (min-width: 1440px) {
+    .indexContainer {
+        grid-template-rows: 10vh minmax(auto, 65rem) repeat(2, minmax(auto, 60rem)) minmax(50rem, auto) minmax(47.6rem, auto) minmax(25rem, auto);
+        grid-template-columns: [full-start] 1fr repeat(20, [col-start] minmax(min-content, 5rem)[col-end]) 1fr [full-end];
+        // grid-template-columns: [full-start] minmax(27.3rem, auto) repeat(8, [col-start] minmax(min-content, 5rem)[col-end]) minmax(27.3rem, auto) [full-end];
+    }
+
+    .headerContainer {
+        grid-column: full-start / full-end;
+        grid-row: 1 / 2;
+    }
+
+    //Top Img Top Txt Containers
+    .topImgContainer {
+        grid-column: 10 / full-end;
+
+        &__topImgMobile {
+            display: none;
+        }
+
+        &__topImgTablet {
+            display: none;
+        }
+
+        &__topImgDesktop {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    //Top Img Top Txt Containers END
+
+    //Beautiful Img Storie One Container
+    .imgContainerBeautiful {
+        grid-row: 3 / 4;
+        grid-column: full-start / 14;
+        
+        &__beautifulImgMobile {
+            display: none;
+        }
+
+        &__beautifulImgTablet {
+            display: none;
+        }
+
+        &__beautifulImgDesktop {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .viewStorieOneContainer {
+        grid-row: 3 / 4;
+        grid-column: 14 / full-end;
+    }
+    //Beautiful Img Storie One Container END
+
+    //Designed Img Storie Two Container 
+    .imgContainerDesigned {
+        grid-row: 4 / 5;
+        grid-column: 10 / full-end;
+
+        &__designedImgMobile {
+            display: none;
+        }
+
+        &__designedImgTablet {
+            display: none;
+        }
+
+        &__designedImgDesktop {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+    .viewStorieTwoContainer {
+        grid-row: 4 / 5;
+        grid-column: full-start / 10;
+    }
+    //Designed Img Storie Two Container END
+
+
+    .contentWrapper {
+        margin: 17.3rem 12rem 17.3rem 11.2rem;
+    }
+
 }

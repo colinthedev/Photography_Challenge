@@ -1,3 +1,8 @@
+@media screen and (max-width: 767px) {
+    .theFeaturesContainerBS {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 768px) {
 
@@ -65,18 +70,134 @@
     }
     //Pricing Plans END
 
-    //The Features
+    //The Features Container For Mobile
     .theFeaturesContainer {
-        grid-row: 7 / 8;
-        grid-column: full-start / full-end;
-        margin: 6.4rem 4rem 0 3.9rem;
+        display: none;
     }
 
+    //The Features Container for Tablet and Desktop
+    .theFeaturesContainerBS {
+        grid-row: 7 / 8;
+        grid-column: full-start / full-end;
+        margin: 6.4rem 4rem 11.2rem 3.9rem;
+    }
+
+    //Grid Layout For Tablet And Desktop
+    .featuresWrapperGrid {
+        grid-row: 2 / 3;
+        grid-column: full-start / full-end;
+        display: grid;
+        grid-template-columns: 2fr [full-start] repeat(13, 1fr) [full-end] 2fr;
+        grid-template-rows: repeat(17, 1fr);
+        align-items: flex-end;
+    }
+
+    //Compare Heading 
+    .featuresWrapperHeading {
+        grid-row: 3 / 4;
+        grid-column: full-start / full-end;
+    }
+    
+    //Heading
+    .features {
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+        display: block;
+        margin: auto auto 0 2rem;
+    }
+
+    //Heading
+    .basic {
+        grid-column:  8 / 9;
+    }
+
+    //Heading
+    .pro {
+        grid-column: 11 / 12;
+    }
+
+    //Heading
+    .business {
+        grid-column: 14 / 16;
+    }
+
+    //Rows For Features Compare Plans
+    .rowThree {
+        grid-column: 1 / 6;
+        grid-row: 3 / 4;
+    }
+
+    .rowFive {
+        grid-column: 1 / 6;
+        grid-row: 5 / 6;
+    }
+
+    .rowSeven {
+        grid-column: 1 / 7;
+        grid-row: 7 / 8;
+    }
+
+    .rowNine {
+        grid-column: 1 / 7;
+        grid-row: 9 / 10;
+    }
+
+    .rowEleven {
+        grid-column: 1 / 7;
+        grid-row: 11 / 12;
+    }
+
+    .rowThirteen {
+        grid-column: 1 / 7;
+        grid-row: 13 / 14;
+    }
+
+    .rowFifteen {
+        grid-column: 1 / 7;
+        grid-row: 15 / 16;
+    }
+
+    .rowSeventeen {
+        grid-column: 1 / 7;
+        grid-row: 17 / 18;
+    }
+    //Rows For Features Compare Plans END
+
+    //Check Marks
+    .checkMarkOne {
+        grid-column:  8 / 9;
+        display: block;
+        margin: auto;
+    }
+
+    .checkMarkTwo {
+        grid-column: 11 / 12;
+        display: block;
+        margin: auto;
+    }
+
+    .checkMarkThree {
+        grid-column: 14 / 15;
+        display: block;
+        margin: auto;
+    }
+    //Check Marks END
+
+    //Features Headings Center
+    .bigScreen {
+        display: block;
+        margin: auto auto auto 2rem;
+    }
+    //Features Headings Center END
+
+    //Components
     .lineBreakBlk {
+        grid-column: 1 / -1;
         width: 100%;
     }
 
     .lineBreakGrey {
+        grid-column: 1 / -1;
         width: 100%;
     }
     //The Features END
