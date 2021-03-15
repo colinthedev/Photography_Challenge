@@ -1380,12 +1380,14 @@ template {
   .pricingContainer {
     display: grid;
     background: var(--color-background-white);
-    grid-template-rows: 10vh minmax(auto, 49rem) minmax(13.6rem, auto) repeat(3, minmax(40.7rem, auto)) minmax(95rem, auto) minmax(28.8rem, auto) minmax(28.4rem, auto);
+    grid-template-rows: 10vh minmax(auto, 49rem) minmax(13.6rem, auto) repeat(3, minmax(27rem, auto)) minmax(95rem, auto) minmax(28.8rem, auto) minmax(28.4rem, auto);
     grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem) [col-end]) [center-end] auto [full-end]; }
 
   .toggleContainer {
     grid-row: 3 / 4;
-    grid-column: full-start / full-end; }
+    grid-column: full-start / full-end;
+    width: 50%;
+    margin: 0 auto 0 auto; }
 
   .basicPricePlanContainer {
     grid-row: 4 / 5;
@@ -1401,6 +1403,27 @@ template {
     grid-row: 6 / 7;
     grid-column: full-start / full-end;
     margin: 2.4rem 4rem 2.4rem 3.9rem; }
+
+  .businessPricePlanContainer,
+  .basicPricePlanContainer {
+    position: relative; }
+
+  .pricePlanWrapper {
+    align-items: flex-start; }
+
+  .summaryCenter {
+    text-align: left; }
+
+  .priceAmountWrapper {
+    position: absolute;
+    right: 0;
+    margin-right: 4.8rem; }
+
+  .headingPriceWrapper,
+  .summaryWrapper,
+  .pickPlanBtnBlk,
+  .pickPlanBtnWht {
+    margin-left: 4rem; }
 
   .theFeaturesContainer {
     grid-row: 7 / 8;
