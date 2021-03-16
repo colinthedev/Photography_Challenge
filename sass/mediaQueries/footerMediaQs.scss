@@ -1,4 +1,17 @@
+//Disables Desktop Footer HTML
+@media screen and (max-width: 1366px) {
+    //Index Footer
+    .footerContainerDesktop {
+        display: none;
+    }
 
+    //Stories Footer
+    .storiesFooterContainerDesktop {
+        display: none;
+    }
+}
+
+//Tablet
 @media screen and (min-width: 768px) {
     //Index Footer Section
     .footerContainer {
@@ -28,7 +41,7 @@
     }
     //Pricing Footer Section END
 
-    //Tablet Footer Section Shared Properties
+    //Shared Footer Properties
     .footerWrapperSml {
         display: flex;
         flex-direction: column;
@@ -53,7 +66,7 @@
         margin: 7.2rem 0 0 0;
     }
 
-    ul.summaryCenter {
+    ul.summaryCenter { //Footer Links Container
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -63,5 +76,62 @@
         margin-right: 2.6rem;
         margin-top: 0;
     }
-    //Tablet Footer Section Shared Properties END
+    //Shared Footer Properties END
+}
+
+//Desktop
+@media screen and (min-width: 1367px) {
+    //Shared Footer Properties
+    .footerWrapperBig {
+        width: inherit;
+        margin: 0 0 11.5rem 17.1rem;
+    }
+
+    .footerLinksContainer {
+        width: 33%;
+        margin-left: 10.9rem;
+
+        &__txt {
+            margin-bottom: 2.7rem;
+        }
+    }
+
+    .footerCntr {
+        margin: 5.6rem 0 0 0;
+    }
+
+    .iconContainer {
+        margin: 10rem 0 0 0;
+    }
+
+    ul.summaryCenter { //Footer Links Container
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    //Shared Footer Properties END
+
+    //Index Footer Section
+    .footerContainer {
+        display: none;
+    }
+    
+    .footerContainerDesktop {
+        grid-row: 7 / 8;
+        @include footerContainerPropertiesTablet();
+    }
+    //Index Footer Section END
+
+    //Stories Footer Section
+    .storiesFooterContainer {
+        display: none;
+    }
+
+    .storiesFooterContainerDesktop {
+        grid-row: 7 / 8;
+        @include footerContainerPropertiesTablet();
+    }
+    //Stories Footer Section END
+
 }

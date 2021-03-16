@@ -1,7 +1,6 @@
 @media screen and (min-width: 768px) {
     .indexContainer {
         grid-template-rows: 10vh minmax(65rem, auto) repeat(2, minmax(60rem, auto)) repeat(2, minmax(50rem, auto)) minmax(101.5rem, auto) minmax(28.4rem, auto);
-        // grid-template-columns: [full-start] 1fr repeat(20, [col-start] minmax(min-content, 5rem)[col-end]) 1fr [full-end];
         grid-template-columns: [full-start] minmax(27.3rem, auto) repeat(8, [col-start] minmax(min-content, 5rem)[col-end]) minmax(27.3rem, auto) [full-end];
     }
 
@@ -131,28 +130,28 @@
     .mountainsContainer {
         grid-row: 5 / 6;
         grid-column: full-start / 6;
-        background-image: url(../../assets/stories/mobile/mountains.jpg);
+        background-image: url(../../assets/stories/desktop/mountains.jpg);
         @include backgroundImagePropertiesTablet();
     }
 
     .cityScapeContainer {
         grid-row: 5 / 6;
         grid-column: 6 / full-end;
-        background-image: url(../../assets/stories/mobile/cityscapes.jpg);
+        background-image: url(../../assets/stories/desktop/cityscapes.jpg);
         @include backgroundImagePropertiesTablet();
     }
 
     .daysVoyageContainer {
         grid-row: 6 / 7;
         grid-column: full-start / 6;
-        background-image: url(../../assets/stories/mobile/18-days-voyage.jpg);
+        background-image: url(../../assets/stories/desktop/18-days-voyage.jpg);
         @include backgroundImagePropertiesTablet();
     }
 
     .architecturalsContainer {
         grid-row: 6 / 7;
         grid-column: 6 / full-end;
-        background-image: url(../../assets/stories/mobile/architecturals.jpg);
+        background-image: url(../../assets/stories/desktop/architecturals.jpg);
         @include backgroundImagePropertiesTablet();
     }
     //IMG Read Story Section END
@@ -165,11 +164,10 @@
     //SVG Container END
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1367px) {
     .indexContainer {
         grid-template-rows: 10vh minmax(auto, 65rem) repeat(2, minmax(auto, 60rem)) minmax(50rem, auto) minmax(47.6rem, auto) minmax(25rem, auto);
-        grid-template-columns: [full-start] 1fr repeat(20, [col-start] minmax(min-content, 5rem)[col-end]) 1fr [full-end];
-        // grid-template-columns: [full-start] minmax(27.3rem, auto) repeat(8, [col-start] minmax(min-content, 5rem)[col-end]) minmax(27.3rem, auto) [full-end];
+        grid-template-columns:[full-start]  repeat(28, [col-start] 1fr [col-end])  [full-end];
     }
 
     .headerContainer {
@@ -179,7 +177,7 @@
 
     //Top Img Top Txt Containers
     .topImgContainer {
-        grid-column: 10 / full-end;
+        grid-column: 13 / full-end;
 
         &__topImgMobile {
             display: none;
@@ -195,12 +193,16 @@
             width: 100%;
         }
     }
+
+    .topTxtContainer {
+        grid-column: full-start / 13;
+    }
     //Top Img Top Txt Containers END
 
     //Beautiful Img Storie One Container
     .imgContainerBeautiful {
         grid-row: 3 / 4;
-        grid-column: full-start / 14;
+        grid-column: full-start / 17;
         
         &__beautifulImgMobile {
             display: none;
@@ -219,14 +221,14 @@
 
     .viewStorieOneContainer {
         grid-row: 3 / 4;
-        grid-column: 14 / full-end;
+        grid-column: 18 / full-end;
     }
     //Beautiful Img Storie One Container END
 
     //Designed Img Storie Two Container 
     .imgContainerDesigned {
         grid-row: 4 / 5;
-        grid-column: 10 / full-end;
+        grid-column: 13 / full-end;
 
         &__designedImgMobile {
             display: none;
@@ -245,10 +247,62 @@
     
     .viewStorieTwoContainer {
         grid-row: 4 / 5;
-        grid-column: full-start / 10;
+        grid-column: full-start / 13;
     }
     //Designed Img Storie Two Container END
 
+    //IMG Read Story Section
+    .mountainsContainer {
+        grid-column: full-start / 8;
+        background-image: url(../../assets/stories/desktop/mountains.jpg);
+        @include backgroundImagePropertiesTablet();
+    }
+
+    .cityScapeContainer {
+        grid-column: 8 / 15;
+        background-image: url(../../assets/stories/desktop/cityscapes.jpg);
+        @include backgroundImagePropertiesTablet();
+    }
+
+    .daysVoyageContainer {
+        grid-column: 15 / 22;
+        grid-row: 5 / 6;
+        background-image: url(../../assets/stories/desktop/18-days-voyage.jpg);
+        @include backgroundImagePropertiesTablet();
+    }
+
+    .architecturalsContainer {
+        grid-column: 22 / full-end;
+        grid-row: 5 / 6;
+        background-image: url(../../assets/stories/desktop/architecturals.jpg);
+        @include backgroundImagePropertiesTablet();
+    }
+    //IMG Read Story Section END
+
+    .indexSvgRowContainer {
+        grid-row: 6 / 7;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        align-content: flex-start;
+
+    }
+
+    .photoUploadContainer,
+    .embedContainer,
+    .responsiveContainer {
+        max-height: 37rem;
+    }
+
+    .desktopMargin {
+        margin-top: 8.25rem;
+    }
+
+   .summaryCenter {
+       text-align: center !important;
+   }
 
     .contentWrapper {
         margin: 17.3rem 12rem 17.3rem 11.2rem;
