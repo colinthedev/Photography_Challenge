@@ -1233,7 +1233,7 @@ template {
     display: grid;
     background: var(--color-background-white);
     grid-template-rows: 10vh minmax(auto, 49rem) minmax(28rem, auto) minmax(25rem, auto) !important;
-    grid-template-columns: [full-start] minmax(16.5rem, auto) repeat(8, [col-start] minmax(auto, 18rem) [col-end]) minmax(16.5rem, auto) [full-end]; }
+    grid-template-columns: [full-start] repeat(28, [col-start] 1fr [col-end]) [full-end]; }
 
   .topImgContainer {
     grid-row: 2 / 3;
@@ -1254,7 +1254,8 @@ template {
   .featuresSvgRowContainer {
     display: grid;
     grid-template-rows: repeat(2, minmax(44.8rem, auto));
-    grid-template-columns: [full-start] minmax(16.5rem, auto) repeat(3, [col-start] minmax(36rem, auto) [col-end]) minmax(16.5rem, auto) [full-end]; }
+    grid-template-columns: [full-start] minmax(16.5rem, auto) repeat(3, [col-start] minmax(36rem, auto) [col-end]) minmax(16.5rem, auto) [full-end];
+    align-items: flex-end; }
 
   .contentWrapperSVG {
     margin: auto; }
@@ -1265,20 +1266,17 @@ template {
   .responsiveContainer {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    width: 100%;
-    margin-top: auto; }
+    width: 100%; }
 
   .photoUploadContainer {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
-    width: 100%;
-    margin-top: auto; }
+    width: 100%; }
 
   .embedContainer {
     grid-row: 1 / 2;
     grid-column: 4 / 5;
-    width: 100%;
-    margin-top: auto; }
+    width: 100%; }
 
   .domainContainer {
     grid-row: 2 / 3;
@@ -1310,6 +1308,9 @@ template {
     display: none; }
 
   .featuresFooterContainerDesktop {
+    display: none; }
+
+  .pricingFooterContainerDesktop {
     display: none; } }
 @media screen and (min-width: 768px) {
   .footerContainer {
@@ -1423,6 +1424,17 @@ template {
 
   .featuresFooterContainerDesktop {
     grid-row: 5 / 6;
+    grid-column: full-start / full-end;
+    background: var(--color-background-black);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+
+  .pricingFooterContainer {
+    display: none; }
+
+  .pricingFooterContainerDesktop {
+    grid-row: 7 / 8;
     grid-column: full-start / full-end;
     background: var(--color-background-black);
     display: flex;
@@ -1589,7 +1601,7 @@ template {
     grid-row: 1 / 2; }
 
   .topImgContainer {
-    grid-column: 13 / full-end; }
+    grid-column: 13 / full-end !important; }
     .topImgContainer__topImgMobile {
       display: none; }
     .topImgContainer__topImgTablet {
@@ -1600,7 +1612,7 @@ template {
       width: 100%; }
 
   .topTxtContainer {
-    grid-column: full-start / 13; }
+    grid-column: full-start / 13 !important; }
 
   .imgContainerBeautiful {
     grid-row: 3 / 4;
@@ -1835,6 +1847,71 @@ template {
   .pricingBetaContainer {
     grid-row: 8 / 9;
     background-image: url(../../assets/shared/tablet/bg-beta.jpg); } }
+@media screen and (min-width: 1367px) {
+  .pricingContainer {
+    display: grid;
+    background: var(--color-background-white);
+    grid-template-rows: 10vh minmax(auto, 49rem) minmax(13.6rem, auto) minmax(47rem, auto) minmax(65.6rem, auto) minmax(28rem, auto) minmax(25rem, auto);
+    grid-template-columns: [full-start] repeat(28, [col-start] 1fr [col-end]) [full-end]; }
+
+  .toggleContainer {
+    width: 25.5rem;
+    margin: 12rem auto 4.8rem auto; }
+
+  .basicPricePlanContainer {
+    grid-row: 4 / 5;
+    grid-column: 4 / 11;
+    margin: 3.2rem 0 0 0;
+    height: 40.7rem;
+    min-width: 35rem;
+    max-width: 100%; }
+
+  .proPricePlanContainer {
+    grid-row: 4 / 5;
+    grid-column: 11 / 19;
+    margin: 0 3rem 2.4rem 3rem;
+    height: 47rem;
+    min-width: 35rem;
+    max-width: 100%; }
+
+  .businessPricePlanContainer {
+    grid-row: 4 / 5;
+    grid-column: 19 / 26;
+    margin: 3.2rem 0 0 0;
+    height: 40.7rem;
+    min-width: 35rem;
+    max-width: 100%; }
+
+  .pricePlanWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem; }
+
+  .priceAmountWrapper {
+    position: relative;
+    margin-right: 0;
+    margin-top: 1rem; }
+
+  .headingPriceWrapper,
+  .summaryWrapper,
+  .pickPlanBtnBlk,
+  .pickPlanBtnWht {
+    margin-left: 0; }
+
+  .theFeaturesContainer {
+    display: none; }
+
+  .theFeaturesContainerBS {
+    grid-row: 5 / 6;
+    grid-column: 7 / 22;
+    margin: 16rem 4rem 16rem 4rem;
+    width: 100%; }
+
+  .pricingBetaContainer {
+    grid-row: 6 / 7;
+    background-image: url(../../assets/shared/desktop/bg-beta.jpg); } }
 @media screen and (min-width: 768px) {
   .storiesContainer {
     grid-template-rows: 10vh minmax(65rem, auto) repeat(7, minmax(50rem, auto)) minmax(28.4rem, auto);

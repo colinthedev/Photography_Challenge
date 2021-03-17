@@ -34,6 +34,7 @@
         background: var(--color-background-black);
     }
 
+    //SVG Container
     .featuresSvgRowContainer {
         grid-row: 3 / 4;
         grid-column: full-start / full-end;
@@ -48,6 +49,7 @@
         align-items: center;
         justify-content: center;
     }
+    //SVG Container END
 
     .featuresBetaContainer {
         grid-row: 4 / 5;
@@ -62,7 +64,8 @@
         display: grid;
         background: var(--color-background-white);
         grid-template-rows: 10vh minmax(auto, 49rem) minmax(28rem, auto) minmax(25rem, auto)!important;
-        grid-template-columns: [full-start] minmax(16.5rem, auto) repeat(8, [col-start] minmax(auto, 18rem) [col-end]) minmax(16.5rem, auto) [full-end];
+        grid-template-columns:[full-start]  repeat(28, [col-start] 1fr [col-end])  [full-end];
+        // grid-template-columns: [full-start] minmax(16.5rem, auto) repeat(8, [col-start] minmax(auto, 18rem) [col-end]) minmax(16.5rem, auto) [full-end];
     }
 
     .topImgContainer {
@@ -89,10 +92,12 @@
         grid-column: full-start / 5 !important;
     }
 
+    //SVG Container
     .featuresSvgRowContainer {
         display: grid;
         grid-template-rows: repeat(2, minmax(44.8rem, auto));
         grid-template-columns: [full-start] minmax(16.5rem, auto) repeat(3, [col-start] minmax(36rem, auto) [col-end]) minmax(16.5rem, auto) [full-end];
+        align-items: flex-end;
     }
 
     .contentWrapperSVG {
@@ -107,21 +112,18 @@
         grid-row: 1 / 2;
         grid-column: 2 / 3;
         width: 100%;
-        margin-top: auto;
     }
 
     .photoUploadContainer {
         grid-row: 1 / 2;
         grid-column: 3 / 4;
         width: 100%;
-        margin-top: auto;
     }
 
     .embedContainer {
         grid-row: 1 / 2;
         grid-column: 4 / 5;
         width: 100%;
-        margin-top: auto;
     }
 
     .domainContainer { 
@@ -144,6 +146,7 @@
         width: 100%;
         margin: 10.4rem 0 16rem 0;
     }
+    //SVG Container END
 
     .featuresBetaContainer {
         grid-row: 4 / 5;

@@ -14,6 +14,11 @@
     .featuresFooterContainerDesktop {
         display: none;
     }
+
+    //Pricing Footer
+    .pricingFooterContainerDesktop {
+        display: none;
+    }
 }
 
 //Tablet
@@ -149,5 +154,15 @@
         @include footerContainerPropertiesTablet();
     }
     //Features Footer Section END
+
+    //Pricing Footer Section
+    .pricingFooterContainer {
+        display: none;
+    }
+
+    .pricingFooterContainerDesktop {
+        grid-row: 7 / 8;
+        @include footerContainerPropertiesTablet();
+    }
 
 }

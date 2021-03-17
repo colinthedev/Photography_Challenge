@@ -4,6 +4,7 @@
     }
 }
 
+//Tablet
 @media screen and (min-width: 768px) {
 
     .pricingContainer {
@@ -205,6 +206,97 @@
     .pricingBetaContainer {
         grid-row: 8 / 9;
         background-image: url(../../assets/shared/tablet/bg-beta.jpg);
+    }
+}
+
+//Desktop
+@media screen and (min-width: 1367px) {
+
+    .pricingContainer {
+        display: grid;
+        background: var(--color-background-white);
+        grid-template-rows: 10vh minmax(auto, 49rem) minmax(13.6rem, auto) minmax(47rem, auto) minmax(65.6rem, auto) minmax(28rem, auto) minmax(25rem, auto);
+        grid-template-columns:[full-start]  repeat(28, [col-start] 1fr [col-end])  [full-end];
+
+        // grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
+
+        // grid-template-columns: [full-start] minmax(27.3rem, auto) repeat(8, [col-start] minmax(min-content, 5rem)[col-end]) minmax(27.3rem, auto) [full-end];
+    }
+
+    //Toggle Button Container
+    .toggleContainer {
+        width: 25.5rem;
+        margin: 12rem auto 4.8rem auto;
+    }
+    //Toggle Button Container END
+
+    //Pricing Plans
+    .basicPricePlanContainer {
+        grid-row: 4 / 5;
+        grid-column: 4 / 11;
+        margin: 3.2rem 0 0 0;
+        height: 40.7rem;
+        min-width: 35rem;
+        max-width: 100%;
+    }
+
+    .proPricePlanContainer {
+        grid-row: 4 / 5;
+        grid-column: 11 / 19;
+        margin: 0 3rem 2.4rem 3rem; 
+        height: 47rem;
+        min-width: 35rem;
+        max-width: 100%;  
+    }
+
+    .businessPricePlanContainer {
+        grid-row: 4 / 5;
+        grid-column: 19 / 26;
+        margin: 3.2rem 0 0 0;
+        height: 40.7rem;
+        min-width: 35rem;
+        max-width: 100%;
+    }
+
+    .pricePlanWrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+    
+    .priceAmountWrapper {
+        position: relative;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    .headingPriceWrapper,
+    .summaryWrapper,
+    .pickPlanBtnBlk,
+    .pickPlanBtnWht {
+        margin-left: 0;
+    }
+    //Pricing Plans END
+
+    //The Features Container For Mobile
+    .theFeaturesContainer {
+        display: none;
+    }
+
+    //The Features Container for Tablet and Desktop
+    .theFeaturesContainerBS {
+        grid-row: 5 / 6;
+        grid-column: 7 / 22;
+        margin: 16rem 4rem 16rem 4rem;
+        width: 100%;
+    }
+    //The Features END
+
+    .pricingBetaContainer {
+        grid-row: 6 / 7;
+        background-image: url(../../assets/shared/desktop/bg-beta.jpg);
     }
 
 }

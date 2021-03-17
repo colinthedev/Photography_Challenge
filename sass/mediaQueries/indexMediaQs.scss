@@ -1,3 +1,4 @@
+//Tablet
 @media screen and (max-width: 768px) {
     .topImgContainer {
 
@@ -217,6 +218,7 @@
     //SVG Container END
 }
 
+//Desktop
 @media screen and (min-width: 1367px) {
     .indexContainer {
         grid-template-rows: 10vh minmax(auto, 65rem) repeat(2, minmax(auto, 60rem)) minmax(50rem, auto) minmax(47.6rem, auto) minmax(25rem, auto);
@@ -230,7 +232,7 @@
 
     //Top Img Top Txt Containers
     .topImgContainer {
-        grid-column: 13 / full-end;
+        grid-column: 13 / full-end !important;
 
         &__topImgMobile {
             display: none;
@@ -248,7 +250,7 @@
     }
 
     .topTxtContainer {
-        grid-column: full-start / 13;
+        grid-column: full-start / 13 !important;
     }
     //Top Img Top Txt Containers END
 
