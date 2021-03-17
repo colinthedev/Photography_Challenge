@@ -1228,6 +1228,78 @@ template {
     grid-row: 4 / 5;
     grid-column: full-start / full-end;
     background-image: url(../../assets/shared/tablet/bg-beta.jpg); } }
+@media screen and (min-width: 1367px) {
+  .featuresContainer {
+    display: grid;
+    background: var(--color-background-white);
+    grid-template-rows: 10vh minmax(auto, 49rem) minmax(89.6rem, auto) minmax(28rem, auto) minmax(25rem, auto);
+    grid-template-columns: [full-start] minmax(16.5rem, auto) repeat(4, [col-start] minmax(36rem, auto) [col-end]) minmax(16.5rem, auto) [full-end]; }
+
+  .topImgContainer {
+    grid-row: 2 / 3;
+    grid-column: 4 / full-end !important;
+    z-index: 100; }
+    .topImgContainer__topImgTablet {
+      display: none; }
+    .topImgContainer__topImgMobile {
+      display: none; }
+    .topImgContainer__topImgDesktop {
+      display: block;
+      height: 100%;
+      width: 100%; }
+
+  .topTxtContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-row: 2 / 3;
+    grid-column: full-start / 4 !important;
+    background: var(--color-background-black); }
+
+  .featuresSvgRowContainer {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+    align-items: center;
+    justify-items: center; }
+
+  .featuresSvgRowContainer > * {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center; }
+
+  .contentWrapperSVG {
+    margin: auto; }
+
+  .responsiveContainer {
+    grid-column: 1 / 2;
+    width: inherit;
+    height: inherit; }
+
+  .svgMarginDesktop {
+    margin-top: 8rem; }
+
+  .photoUploadContainer {
+    display: flex;
+    grid-column: 2 / 3;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: inherit;
+    height: inherit; }
+
+  .embedContainer {
+    grid-column: 3 / 4;
+    width: inherit;
+    height: inherit; }
+
+  .featuresBetaContainer {
+    grid-row: 4 / 5;
+    grid-column: full-start / full-end;
+    background-image: url(../../assets/shared/tablet/bg-beta.jpg); } }
 @media screen and (max-width: 1366px) {
   .footerContainerDesktop {
     display: none; }
@@ -1340,6 +1412,33 @@ template {
     display: flex;
     flex-direction: row;
     align-items: center; } }
+@media screen and (max-width: 768px) {
+  .topImgContainer__topImgMobile {
+    display: block;
+    height: 100%;
+    width: 100%; }
+  .topImgContainer__topImgTablet {
+    display: none; }
+  .topImgContainer__topImgDesktop {
+    display: none; }
+
+  .imgContainerBeautiful__beautifulImgMobile {
+    display: block;
+    height: 100%;
+    width: 100%; }
+  .imgContainerBeautiful__beautifulImgTablet {
+    display: none; }
+  .imgContainerBeautiful__beautifulImgDesktop {
+    display: none; }
+
+  .imgContainerDesigned__designedImgMobile {
+    display: block;
+    height: 100%;
+    width: 100%; }
+  .imgContainerDesigned__designedImgTablet {
+    display: none; }
+  .imgContainerDesigned__designedImgDesktop {
+    display: none; } }
 @media screen and (min-width: 768px) {
   .indexContainer {
     grid-template-rows: 10vh minmax(65rem, auto) repeat(2, minmax(60rem, auto)) repeat(2, minmax(50rem, auto)) minmax(101.5rem, auto) minmax(28.4rem, auto);
@@ -1833,13 +1932,10 @@ template {
     grid-template-columns: [full-start] repeat(4, [col-start] minmax(36rem, auto) [col-end]) [full-end]; }
 
   .topTxtContainerFull {
-    grid-row: 2 / 3;
-    grid-column: full-start / full-end;
-    grid-column: full-start / full-end;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../../assets/stories/desktop/moon-of-appalacia.jpg); }
+    grid-column: full-start / 2 !important;
+    background-image: none;
+    background: transparent;
+    margin-left: 11.2rem; }
 
   .topImgContainerFull__topImgMobile {
     display: none; }

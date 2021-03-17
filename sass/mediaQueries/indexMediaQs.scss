@@ -1,3 +1,56 @@
+@media screen and (max-width: 768px) {
+    .topImgContainer {
+
+        &__topImgMobile {
+            display: block;
+            height: 100%;
+            width: 100%;      
+        }
+
+        &__topImgTablet {
+            display: none;
+        }
+
+        &__topImgDesktop {
+            display: none;
+        }
+    }
+
+    .imgContainerBeautiful {
+
+        &__beautifulImgMobile {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        
+        &__beautifulImgTablet {
+            display: none;
+        }
+
+        &__beautifulImgDesktop {
+            display: none;
+        }
+    }
+
+    .imgContainerDesigned {
+
+        &__designedImgMobile {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    
+        &__designedImgTablet {
+            display: none;
+        }
+    
+        &__designedImgDesktop {
+            display: none;
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
     .indexContainer {
         grid-template-rows: 10vh minmax(65rem, auto) repeat(2, minmax(60rem, auto)) repeat(2, minmax(50rem, auto)) minmax(101.5rem, auto) minmax(28.4rem, auto);
