@@ -159,18 +159,47 @@
 }
 //Headings END
 
-//Footer Text
-.footerLinksContainer__txt { //Footer Links
+//Navigation list
+.navListTxt {
     cursor: pointer;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
-    font-size: 1.2rem;
-    line-height: 15px;
-    letter-spacing: 2px;
-    margin-top: 1.6rem;
-    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 19.53px;
+    letter-spacing: 2.5px;
+    color: var(--color-text-black);
 }
-//Footer Text END
+
+.navlistTxt:hover,
+.navlistTxt:focus,
+.navListTxt:active {
+    cursor: pointer;
+    opacity: .25;
+}
+
+
+.navBtnTxt {
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 19.53px;
+    letter-spacing: 2.5px;
+    color: var(--color-text-white);
+}
+//Navigation list END
+
+//Button Txt
+.pickPlanBtnTxtWht {
+    @include solidButtonTxt();
+    color: var(--color-text-btnwhite);
+}
+
+.pickPlanBtnTxtBlk {
+    @include solidButtonTxt();
+    color: var(--color-text-btnblack);
+}
+//Button Txt END
 
 //Summary Txt
 .summaryCenter {
@@ -207,6 +236,19 @@
 }
 //Summary Txt END
 
+//Footer Text
+.footerLinksContainer__txt { //Footer Links
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 15px;
+    letter-spacing: 2px;
+    margin-top: 1.6rem;
+    color: var(--color-text-white);
+}
+//Footer Text END
+
 //Copywrite Txt
 .copywriteTxt {
     font-family: 'DM Sans', sans-serif;
@@ -217,15 +259,3 @@
     opacity: .5;
 }
 //Copywrite Txt END
-
-//Button Txt
-.pickPlanBtnTxtWht {
-    @include solidButtonTxt();
-    color: var(--color-text-btnwhite);
-}
-
-.pickPlanBtnTxtBlk {
-    @include solidButtonTxt();
-    color: var(--color-text-btnblack);
-}
-//Button Txt END

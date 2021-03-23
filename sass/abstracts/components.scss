@@ -1,4 +1,89 @@
+//START OF BUTTONS
+//Mobile Nav Menu Get an Invite Button
+.navInviteBtn {
+    display: block;
+    width: 80%;
+    height: 4.8rem;
+    background: var(--color-background-btnblack);
+}
+//Mobile Nav Menu Get an Invite Button END
+
+//Pick Plan Button
+.pickPlanBtnBlk {
+    @include solidButton();
+    background: var(--color-background-btnblack);
+}
+
+.pickPlanBtnWht {
+    @include solidButton();
+    background: var(--color-background-btnwhite);
+}
+//Pick Plan Button END
+
+//Pricing Toggle Button
+.toggleWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    height: 100%;
+
+    &__buttonBackground {
+        display: flex;
+        align-items: center;
+        width: 6.4rem;
+        height: 3.4rem;
+        border-radius: 1.6rem;
+        background: var(--color-background-grey);
+    }
+
+    &__button {
+        cursor: pointer;
+        display: block;
+        margin-left: .5rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 50%;
+        background: var(--color-text-btnblack);
+    }
+
+    &__buttonBackgroundYearly {
+        background: var(--color-text-btnblack);
+
+        display: flex;
+        align-items: center;
+        width: 6.4rem;
+        height: 3.4rem;
+        border-radius: 1.6rem;
+    }
+
+    &__buttonYearly {
+        transform: translateX(100%);
+        background: var(--color-background-grey);
+
+        cursor: pointer;
+        display: block;
+        margin-left: .85rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 50%;
+    }
+}
+//Pricing Toggle Button END
+//END OF BUTTONS
+
 //Line Break
+.lineBreakNavMenu {
+    display: block;
+    height: 1px;
+    width: 80%;
+    margin: 2rem auto;
+    background: #000000;
+    opacity: .25;
+    z-index: -100;
+}
+
 .lineBreakFaded {
     height: 1px;
     // width: 31rem;
@@ -41,48 +126,6 @@
     width: 16px;
 }
 //Features Section Check Mark END
-
-//Pricing Toggle 
-.toggleWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    height: 100%;
-
-    &__buttonBackground {
-        display: flex;
-        align-items: center;
-        width: 6.4rem;
-        height: 3.4rem;
-        border-radius: 1.6rem;
-        background: var(--color-background-grey);
-    }
-
-    &__button {
-        cursor: pointer;
-        display: block;
-        margin-left: .5rem;
-        width: 2.4rem;
-        height: 2.4rem;
-        border-radius: 50%;
-        background: var(--color-text-btnblack);
-    }
-}
-//Pricing Toggle END
-
-//Pick Plan Button
-.pickPlanBtnBlk {
-    @include solidButton();
-    background: var(--color-background-btnblack);
-}
-
-.pickPlanBtnWht {
-    @include solidButton();
-    background: var(--color-background-btnwhite);
-}
-//Pick Plan Button END
 
 //Footer Social Media Icons
 a.facebook:hover {
