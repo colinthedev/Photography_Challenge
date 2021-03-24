@@ -11,6 +11,11 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="index" href="index.html">
+  <link rel="stories" href="stories.html">
+  <link rel="features" href="features.html">
+  <link rel="pricing" href="pricing.html">
+
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
 <body class="storiesContainer">
@@ -19,7 +24,29 @@
       <div class="logoContainer__logo"></div>
       <span style="color:black" class="headingBrand">PHOTOSNAP</span>
     </div>
+    <!-- Mobile navigation -->
+    <div class="burger">
+      <div class="burgerLine burger__1"></div>
+      <div class="burgerLine burger__2"></div>
+    </div>
   </header>
+  <!-- Mobile navigation active -->
+  <div class="navigation">
+    <ul class="navigation__listWrapper">
+      <a href="index.html" >
+        <li style="margin: 3.2rem auto 2.0rem" class="navigation__listWrapper-navList navListTxt">HOME</li>
+      </a>
+      <a href="features.html">
+        <li style="margin: 2rem auto 2.0rem" class="navigation__listWrapper-navList navListTxt">FEATURES</li>
+      </a>
+      <a href="pricing.html">
+        <li class="navigation__listWrapper-navList navListTxt">PRICING</li>
+      </a>
+    </ul>
+    <div class="lineBreakNavMenu"></div>
+    <button class="navInviteBtn navBtnTxt">GET AN INVITE</button>
+  </div>
+
   <div class="topImgContainerFull">
     <img src="/assets/stories/mobile/moon-of-appalacia.jpg" alt="Mountains" class="topImgContainerFull__topImgMobile">
     <img src="/assets/stories/tablet/moon-of-appalacia.jpg" alt="Mountains" class="topImgContainerFull__topImgTablet">

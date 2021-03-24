@@ -931,7 +931,7 @@ template {
   height: 25rem;
   background: var(--color-background-white);
   text-align: center;
-  z-index: 100; }
+  z-index: 1000; }
 
 .featuresContainer {
   display: grid;
