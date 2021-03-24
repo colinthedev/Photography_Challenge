@@ -14,6 +14,21 @@
 
 
 
+    document.querySelector('.toggleWrapper__button').addEventListener('click', () => {
+        //Change prices
+        document.querySelector('#yearly190').textContent = '$190.00'
+        document.querySelector('#yearly390').textContent = '$390.00'
+        document.querySelector('#yearly990').textContent = '$990.00'
+
+        //Change toggle button position
+        document.querySelector('.toggleWrapper__button').style.margin = 'auto .5rem auto auto';
+
+        //Change toggle button colors
+        document.querySelector('.toggleWrapper__buttonBackground').style.backgroundColor = '#000';
+        document.querySelector('.toggleWrapper__button').style.backgroundColor = '#fff';
+    })
+
+
 // const pricePlanBackground = document.querySelectorAll('.toggleWrapper__buttonBackground')
 // const pricePlanButton = document.querySelectorAll('.toggleWrapper__button')
 

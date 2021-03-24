@@ -91,6 +91,7 @@
   background-color: #DFDFDF; }
 
 .pickPlanBtnBlk {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,6 +100,7 @@
   background: var(--color-background-btnblack); }
 
 .pickPlanBtnWht {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,7 +167,8 @@
 .storiesDarkForestContainer:hover,
 .storiesSomwarpetsContainer:hover,
 .storiesLandOfContainer:hover {
-  transform: translateY(-25px); }
+  transform: translateY(-25px);
+  transition: ease-in-out .40s; }
 
 .lineBreakNavMenu {
   display: block;
