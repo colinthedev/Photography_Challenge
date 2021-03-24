@@ -56,8 +56,12 @@
     &__listWrapper {
 
 
-        &-navList {
+        &-navList:first-child {
+            margin: 3.2rem auto 2.0rem
+        }
 
+        &-navList:nth-child(2) {
+            margin: 2rem auto 2.0rem
         }
     }
 }

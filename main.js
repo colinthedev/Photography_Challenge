@@ -1,18 +1,17 @@
 'use strict';
 
-document.addEventListener("touchstart", function() {}, true);
+    const burgerBtn = document.querySelector('.burger'); //Container for burger lines
+    let burger1open = document.querySelector('.burger__1'); //Burger line 1
+    let burger2open = document.querySelector('.burger__2'); //Burger line 2
 
-    const burgerBtn = document.querySelector('.burger');
-    let burger1open = document.querySelector('.burger__1');
-    let burger2open = document.querySelector('.burger__2');
-
-    let navMenu = document.querySelector('.navigation');
+    let navMenu = document.querySelector('.navigation'); //Nav menu
 
     burgerBtn.addEventListener('click', () => {
-        burger1open.classList.toggle('open');
-        burger2open.classList.toggle('open');
-        navMenu.classList.toggle('active');
-    })
+        burger1open.classList.toggle('open'); 
+        burger2open.classList.toggle('open'); 
+        navMenu.classList.toggle('active'); //Open nav menu
+    });
+
 
 
 // const pricePlanBackground = document.querySelectorAll('.toggleWrapper__buttonBackground')

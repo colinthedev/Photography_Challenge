@@ -2,8 +2,7 @@
 @media screen and (min-width: 768px) {
     .storiesContainer {
         grid-template-rows: 10vh minmax(65rem, auto) repeat(7, minmax(50rem, auto)) minmax(28.4rem, auto);
-        // grid-template-columns: [full-start] 1fr repeat(20, [col-start] minmax(min-content, 5rem)[col-end]) 1fr [full-end];
-        grid-template-columns: [full-start] minmax(3.9rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3.9rem, 1fr) [full-end]; //1100-1200px 1140px/8(columns) = 142px 140px / 10px = 14rem || min-max min-content creates responsive 
+        grid-template-columns: [full-start] minmax(3.9rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3.9rem, 1fr) [full-end]; //1100-1200px 1140px/8(columns) = 142px 140px / 10px = 14rem
     }
 
     .topTxtContainerFull {
@@ -137,7 +136,8 @@
 @media screen and (min-width: 1367px) {
     .storiesContainer {
         grid-template-rows: 10vh minmax(65rem, auto) repeat(4, minmax(50rem, auto)) minmax(25rem, auto);
-        grid-template-columns: [full-start] repeat(4, [col-start] minmax(36rem, auto) [col-end]) [full-end]; //1100-1200px 1140px/8(columns) = 142px 140px / 10px = 14rem || min-max min-content creates responsive 
+
+        grid-template-columns: [full-start] repeat(4, [col-start] minmax(36rem, auto) [col-end]) [full-end];
     }
 
     .topTxtContainerFull {
@@ -163,7 +163,6 @@
             width: 100%;
         }
     }
-
 
     .contentWrapperTablet {
         display: flex;
@@ -267,4 +266,41 @@
         background-image: url(../../assets/stories/desktop/land-of-dreams.jpg);
     }
 
+}
+
+//Larger Desktop Screens
+@media screen and (min-width: 1500px) {
+    .storiesContainer {
+        grid-template-columns: [full-start] repeat(4, [col-start] minmax(38rem, auto) [col-end]) [full-end]; 
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .storiesContainer {
+        grid-template-columns: [full-start] repeat(4, [col-start] minmax(42rem, auto) [col-end]) [full-end];
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .storiesContainer {
+        grid-template-columns: [full-start] repeat(4, [col-start] minmax(44rem, auto) [col-end]) [full-end];
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .storiesContainer {
+        grid-template-columns: [full-start] repeat(4, [col-start] minmax(46rem, auto) [col-end]) [full-end];
+    }
+}
+
+//1080px
+@media screen and (min-width: 1920px) {
+
+    .storiesContainer {
+        grid-template-columns: [full-start] repeat(4, [col-start] minmax(48rem, auto) [col-end]) [full-end];
+    }
+
+    .contentWrapper {
+        margin: 17.3rem 0 17.3rem 6rem;
+    }
 }

@@ -6,6 +6,10 @@
     height: 4.8rem;
     background: var(--color-background-btnblack);
 }
+
+.navInviteBtn:hover {
+    background-color: #DFDFDF;
+}
 //Mobile Nav Menu Get an Invite Button END
 
 //Pick Plan Button
@@ -73,6 +77,31 @@
 //Pricing Toggle Button END
 //END OF BUTTONS
 
+//Hover State For Storys
+.mountainsContainer:hover,
+.cityScapeContainer:hover,
+.daysVoyageContainer:hover,
+.architecturalsContainer:hover,
+.storiesMountainsContainer:hover,
+.storiesCityScapeContainer:hover,
+.storiesDaysVoyageContainer:hover,
+.storiesArchitecturalsContainer:hover,
+.storiesWorldTourContainer:hover,
+.storiesUnforseenContainer:hover,
+.storiesKingAfricaContainer:hover,
+.storiesTripNowhereContainer:hover,
+.storiesRageSeaContainer:hover,
+.storiesRunningFreeContainer:hover,
+.storiesBehindWavesContainer:hover,
+.storiesCalmWatersContainer:hover,
+.storiesMilkyWayContainer:hover,
+.storiesDarkForestContainer:hover,
+.storiesSomwarpetsContainer:hover,
+.storiesLandOfContainer:hover {
+    transform: translateY(-25px);
+}
+//Hover State For Storys END
+
 //Line Break
 .lineBreakNavMenu {
     display: block;
@@ -137,10 +166,6 @@ img.iconContainer__icon.facebook:hover {
 }
 
 .iconContainer__icon:hover {
-    background-color: black!important;
-}
-
-a:hover {
     background-color: black!important;
 }
 

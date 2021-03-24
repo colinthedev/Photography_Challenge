@@ -87,6 +87,9 @@
   height: 4.8rem;
   background: var(--color-background-btnblack); }
 
+.navInviteBtn:hover {
+  background-color: #DFDFDF; }
+
 .pickPlanBtnBlk {
   display: flex;
   align-items: center;
@@ -141,6 +144,28 @@
     width: 2.4rem;
     height: 2.4rem;
     border-radius: 50%; }
+
+.mountainsContainer:hover,
+.cityScapeContainer:hover,
+.daysVoyageContainer:hover,
+.architecturalsContainer:hover,
+.storiesMountainsContainer:hover,
+.storiesCityScapeContainer:hover,
+.storiesDaysVoyageContainer:hover,
+.storiesArchitecturalsContainer:hover,
+.storiesWorldTourContainer:hover,
+.storiesUnforseenContainer:hover,
+.storiesKingAfricaContainer:hover,
+.storiesTripNowhereContainer:hover,
+.storiesRageSeaContainer:hover,
+.storiesRunningFreeContainer:hover,
+.storiesBehindWavesContainer:hover,
+.storiesCalmWatersContainer:hover,
+.storiesMilkyWayContainer:hover,
+.storiesDarkForestContainer:hover,
+.storiesSomwarpetsContainer:hover,
+.storiesLandOfContainer:hover {
+  transform: translateY(-25px); }
 
 .lineBreakNavMenu {
   display: block;
@@ -198,9 +223,6 @@ img.iconContainer__icon.facebook:hover {
   background-color: black !important; }
 
 .iconContainer__icon:hover {
-  background-color: black !important; }
-
-a:hover {
   background-color: black !important; }
 
 .iconContainer a:hover {
@@ -766,6 +788,9 @@ template {
   letter-spacing: 2.5px;
   color: var(--color-text-white); }
 
+.navBtnTxt:hover {
+  color: var(--color-text-black); }
+
 .pickPlanBtnTxtWht {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.2rem;
@@ -932,6 +957,10 @@ template {
   background: var(--color-background-white);
   text-align: center;
   z-index: 1000; }
+  .navigation.active__listWrapper-navList:first-child {
+    margin: 3.2rem auto 2rem; }
+  .navigation.active__listWrapper-navList:nth-child(2) {
+    margin: 2rem auto 2rem; }
 
 .featuresContainer {
   display: grid;
@@ -1114,7 +1143,7 @@ template {
 
 .storiesContainer {
   display: grid;
-  background: var(--color-background-black);
+  background: var(--color-background-white);
   grid-template-rows: 10vh minmax(auto, 31.7rem) minmax(49.5rem, auto) repeat(16, minmax(37.5rem, auto)) minmax(54rem, auto);
   grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem) [col-end]) [center-end] auto [full-end]; }
 
@@ -1146,6 +1175,8 @@ template {
   margin-bottom: .5rem; }
 
 .storiesMountainsContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 4 / 5;
   background-image: url(../../assets/stories/mobile/mountains.jpg);
   grid-column: full-start / full-end;
@@ -1154,6 +1185,8 @@ template {
   background-position: center; }
 
 .storiesCityScapeContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 5 / 6;
   background-image: url(../../assets/stories/mobile/cityscapes.jpg);
   grid-column: full-start / full-end;
@@ -1162,6 +1195,8 @@ template {
   background-position: center; }
 
 .storiesDaysVoyageContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 6 / 7;
   background-image: url(../../assets/stories/mobile/18-days-voyage.jpg);
   grid-column: full-start / full-end;
@@ -1170,6 +1205,8 @@ template {
   background-position: center; }
 
 .storiesArchitecturalsContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 7 / 8;
   background-image: url(../../assets/stories/mobile/architecturals.jpg);
   grid-column: full-start / full-end;
@@ -1178,6 +1215,8 @@ template {
   background-position: center; }
 
 .storiesWorldTourContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 8 / 9;
   background-image: url(../../assets/stories/mobile/world-tour.jpg);
   grid-column: full-start / full-end;
@@ -1186,6 +1225,8 @@ template {
   background-position: center; }
 
 .storiesUnforseenContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 9 / 10;
   background-image: url(../../assets/stories/mobile/unforeseen-corners.jpg);
   grid-column: full-start / full-end;
@@ -1194,6 +1235,8 @@ template {
   background-position: center; }
 
 .storiesKingAfricaContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 10 / 11;
   background-image: url(../../assets/stories/mobile/king-on-africa.jpg);
   grid-column: full-start / full-end;
@@ -1202,6 +1245,8 @@ template {
   background-position: center; }
 
 .storiesTripNowhereContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 11 / 12;
   background-image: url(../../assets/stories/mobile/trip-to-nowhere.jpg);
   grid-column: full-start / full-end;
@@ -1210,6 +1255,8 @@ template {
   background-position: center; }
 
 .storiesRageSeaContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 12 / 13;
   background-image: url(../../assets/stories/mobile/rage-of-the-sea.jpg);
   grid-column: full-start / full-end;
@@ -1218,6 +1265,8 @@ template {
   background-position: center; }
 
 .storiesRunningFreeContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 13 / 14;
   background-image: url(../../assets/stories/mobile/running-free.jpg);
   grid-column: full-start / full-end;
@@ -1226,6 +1275,8 @@ template {
   background-position: center; }
 
 .storiesBehindWavesContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 14 / 15;
   background-image: url(../../assets/stories/mobile/behind-the-waves.jpg);
   grid-column: full-start / full-end;
@@ -1234,6 +1285,8 @@ template {
   background-position: center; }
 
 .storiesCalmWatersContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 15 / 16;
   background-image: url(../../assets/stories/mobile/calm-waters.jpg);
   grid-column: full-start / full-end;
@@ -1242,6 +1295,8 @@ template {
   background-position: center; }
 
 .storiesMilkyWayContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 16 / 17;
   background-image: url(../../assets/stories/mobile/milky-way.jpg);
   grid-column: full-start / full-end;
@@ -1250,6 +1305,8 @@ template {
   background-position: center; }
 
 .storiesDarkForestContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 17 / 18;
   background-image: url(../../assets/stories/mobile/dark-forest.jpg);
   grid-column: full-start / full-end;
@@ -1258,6 +1315,8 @@ template {
   background-position: center; }
 
 .storiesSomwarpetsContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 18 / 19;
   background-image: url(../../assets/stories/mobile/somwarpet.jpg);
   grid-column: full-start / full-end;
@@ -1266,6 +1325,8 @@ template {
   background-position: center; }
 
 .storiesLandOfContainer {
+  display: grid;
+  align-items: flex-end;
   grid-row: 19 / 20;
   background-image: url(../../assets/stories/mobile/land-of-dreams.jpg);
   grid-column: full-start / full-end;
@@ -1787,6 +1848,55 @@ template {
 
   .contentWrapper {
     margin: 17.3rem 12rem 17.3rem 11.2rem; } }
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none; }
+
+  .lineBreakNavMenu {
+    display: none; }
+
+  .navigation {
+    visibility: visible !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    height: 10%; }
+
+  .navigation__listWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+
+  .navigation__listWrapper a {
+    display: flex;
+    width: min-content;
+    align-items: center;
+    margin-right: 2.5rem; }
+
+  .navigation__listWrapper a:hover {
+    opacity: .30; }
+
+  .navInviteBtn {
+    height: 4rem;
+    width: 16rem;
+    margin: auto 4rem auto 2.1rem; }
+
+  .navBtnTxt {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 15.62px; } }
+@media screen and (min-width: 1024px) {
+  .navigation__listWrapper a {
+    margin-right: 8.5rem; } }
+@media screen and (min-width: 1440px) {
+  .navigation {
+    width: 80%; }
+
+  .navigation__listWrapper {
+    margin: auto; } }
 @media screen and (max-width: 767px) {
   .theFeaturesContainerBS {
     display: none; } }
@@ -2212,5 +2322,23 @@ template {
     grid-row: 6 / 7;
     grid-column: 4 / -1;
     background-image: url(../../assets/stories/desktop/land-of-dreams.jpg); } }
+@media screen and (min-width: 1500px) {
+  .storiesContainer {
+    grid-template-columns: [full-start] repeat(4, [col-start] minmax(38rem, auto) [col-end]) [full-end]; } }
+@media screen and (min-width: 1600px) {
+  .storiesContainer {
+    grid-template-columns: [full-start] repeat(4, [col-start] minmax(42rem, auto) [col-end]) [full-end]; } }
+@media screen and (min-width: 1700px) {
+  .storiesContainer {
+    grid-template-columns: [full-start] repeat(4, [col-start] minmax(44rem, auto) [col-end]) [full-end]; } }
+@media screen and (min-width: 1800px) {
+  .storiesContainer {
+    grid-template-columns: [full-start] repeat(4, [col-start] minmax(46rem, auto) [col-end]) [full-end]; } }
+@media screen and (min-width: 1920px) {
+  .storiesContainer {
+    grid-template-columns: [full-start] repeat(4, [col-start] minmax(48rem, auto) [col-end]) [full-end]; }
+
+  .contentWrapper {
+    margin: 17.3rem 0 17.3rem 6rem; } }
 
 /*# sourceMappingURL=style.css.map */

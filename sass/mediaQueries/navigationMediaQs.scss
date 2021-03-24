@@ -1,0 +1,71 @@
+//Small Tablet
+@media screen and (min-width: 768px) {
+    
+    .burger { //Hide burger BTNS
+        display: none;
+    }
+
+    .lineBreakNavMenu { //Hide grey line break shown in mobile
+        display: none;
+    }
+
+    .navigation {
+        visibility: visible !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+        height: 10%;
+    }
+
+    .navigation__listWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navigation__listWrapper a {
+        display: flex;
+        width: min-content;
+        align-items: center;
+        margin-right: 2.5rem;
+    }
+
+    .navigation__listWrapper a:hover {
+        opacity: .30;
+    }
+
+    .navInviteBtn {
+        height: 4rem;
+        width: 16rem;
+        margin: auto 4rem auto 2.1rem;
+    }
+
+    .navBtnTxt {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        line-height: 15.62px;
+    }
+}
+
+//Large Tablet
+@media screen and (min-width: 1024px) {
+    .navigation__listWrapper a {
+        margin-right: 8.5rem;
+    }
+
+}
+
+//Desktop 
+@media screen and (min-width: 1440px) {
+    
+    .navigation {
+        width: 80%;
+    }
+
+    .navigation__listWrapper {
+        margin: auto;
+    }
+}

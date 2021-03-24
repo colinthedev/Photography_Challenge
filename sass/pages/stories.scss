@@ -1,7 +1,7 @@
 
 .storiesContainer {
     display: grid;
-    background: var(--color-background-black);
+    background: var(--color-background-white);
     grid-template-rows: 10vh minmax(auto, 31.7rem) minmax(49.5rem, auto ) repeat(16, minmax(37.5rem, auto)) minmax(54rem, auto);
     grid-template-columns: [full-start] auto [center-start] repeat(12, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
 }
@@ -44,96 +44,128 @@
 }
 
 .storiesMountainsContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 4 / 5;
     background-image: url(../../assets/stories/mobile/mountains.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesCityScapeContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 5 / 6;
     background-image: url(../../assets/stories/mobile/cityscapes.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesDaysVoyageContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 6 / 7;
     background-image: url(../../assets/stories/mobile/18-days-voyage.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesArchitecturalsContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 7 / 8;
     background-image: url(../../assets/stories/mobile/architecturals.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesWorldTourContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 8 / 9;
     background-image: url(../../assets/stories/mobile/world-tour.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesUnforseenContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 9 / 10;
     background-image: url(../../assets/stories/mobile/unforeseen-corners.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesKingAfricaContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 10 / 11;
     background-image: url(../../assets/stories/mobile/king-on-africa.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesTripNowhereContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 11 / 12;
     background-image: url(../../assets/stories/mobile/trip-to-nowhere.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesRageSeaContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 12 / 13;
     background-image: url(../../assets/stories/mobile/rage-of-the-sea.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesRunningFreeContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 13 / 14;
     background-image: url(../../assets/stories/mobile/running-free.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesBehindWavesContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 14 / 15;
     background-image: url(../../assets/stories/mobile/behind-the-waves.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesCalmWatersContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 15 / 16;
     background-image: url(../../assets/stories/mobile/calm-waters.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesMilkyWayContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 16 / 17;
     background-image: url(../../assets/stories/mobile/milky-way.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesDarkForestContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 17 / 18;
     background-image: url(../../assets/stories/mobile/dark-forest.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesSomwarpetsContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 18 / 19;
     background-image: url(../../assets/stories/mobile/somwarpet.jpg);
     @include backgroundImageProperties();
 }
 
 .storiesLandOfContainer {
+    display: grid;
+    align-items: flex-end;
     grid-row: 19 / 20;
     background-image: url(../../assets/stories/mobile/land-of-dreams.jpg);
     @include backgroundImageProperties();
