@@ -185,6 +185,16 @@
   background: #DFDFDF;
   margin: 2.35rem 0 2.35rem 0; }
 
+.rainbowRectangleIndex {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+  width: 14rem;
+  margin-left: 2.9rem; }
+
 .rainbowRectangleSml {
   display: block;
   position: absolute;
@@ -210,8 +220,70 @@
   top: 0;
   left: 0;
   height: 6px;
-  background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%); }
+  background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+  width: 14rem;
+  margin-left: 3.5rem; }
 
+@media screen and (min-width: 768px) {
+  .rainbowRectangleIndex {
+    top: 45rem;
+    left: -64px;
+    transform: rotate(90deg) translateY(95px);
+    width: 33rem;
+    margin-left: 0; }
+
+  .rainbowRectangleSml {
+    display: block;
+    position: absolute;
+    top: 34rem;
+    left: 1px;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    transform: rotate(90deg) translateY(95px);
+    z-index: 100; }
+
+  .rainbowRectangleFull {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    top: 13.5rem;
+    left: -4rem;
+    width: 27.75rem;
+    transform: rotate(90deg) translateY(95px); }
+
+  .betaRainbowRectangle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    top: 20.90rem;
+    left: -11.1rem;
+    width: 42rem;
+    margin-left: 0;
+    transform: rotate(90deg) translateY(95px); } }
+@media screen and (min-width: 1367px) {
+  .rainbowRectangleIndex {
+    top: 40rem; }
+
+  .rainbowRectangleSml {
+    top: 32rem; }
+
+  .rainbowRectangleFull {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    top: 0rem;
+    left: 0rem;
+    width: 35.15rem;
+    transform: rotate(180deg); } }
 .checkMark {
   display: block;
   height: 12px;
@@ -1644,17 +1716,6 @@ template {
   .contentWrapperSml {
     margin: 100% 6.2rem 4rem 3.3rem; }
 
-  .rainbowRectangleSml {
-    display: block;
-    position: absolute;
-    top: 315px;
-    left: 0;
-    height: 6px;
-    width: 304px;
-    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
-    transform: rotate(90deg) translateY(175px);
-    z-index: 100; }
-
   .topImgContainer {
     grid-column: 10 / full-end; }
     .topImgContainer__topImgMobile {
@@ -1668,7 +1729,8 @@ template {
 
   .topTxtContainer {
     grid-row: 2 / 3;
-    grid-column: full-start / 10; }
+    grid-column: full-start / 10;
+    position: static; }
 
   .contentWrapper {
     display: flex;

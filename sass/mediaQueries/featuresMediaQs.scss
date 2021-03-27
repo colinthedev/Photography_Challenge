@@ -65,7 +65,6 @@
         background: var(--color-background-white);
         grid-template-rows: 10vh minmax(auto, 49rem) minmax(28rem, auto) minmax(25rem, auto)!important;
         grid-template-columns:[full-start]  repeat(28, [col-start] 1fr [col-end])  [full-end];
-        // grid-template-columns: [full-start] minmax(16.5rem, auto) repeat(8, [col-start] minmax(auto, 18rem) [col-end]) minmax(16.5rem, auto) [full-end];
     }
 
     .topImgContainer {

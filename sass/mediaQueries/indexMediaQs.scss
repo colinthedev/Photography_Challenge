@@ -92,12 +92,6 @@
     }
     //Utilities END
 
-    //Components
-    .rainbowRectangleSml {
-        @include rainbowRectangleTablet();
-    }
-    //Components END
-
     //Top Img Top Txt Containers
     .topImgContainer {
         grid-column: 10 / full-end;
@@ -120,6 +114,7 @@
     .topTxtContainer {
         grid-row: 2 / 3;
         grid-column: full-start / 10;
+        position: static;
     }
 
     .contentWrapper {

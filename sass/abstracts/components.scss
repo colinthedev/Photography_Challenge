@@ -124,6 +124,12 @@
 //Line Break End
 
 //Rainbow Rectangle
+.rainbowRectangleIndex {
+    @include rainbowRectangle();
+    width: 14rem;
+    margin-left: 2.9rem;
+}
+
 .rainbowRectangleSml {
     @include rainbowRectangle();
     width: 14rem;
@@ -137,9 +143,61 @@
 
 .betaRainbowRectangle {
     @include rainbowRectangle();
-    
+    width: 14rem;
+    margin-left: 3.5rem;
 }
-//Rainbow Rectangle END
+
+// Media Queries For Rectangle Component
+// Tablet
+@media screen and (min-width: 768px) {
+    .rainbowRectangleIndex { // Home page component
+        top: 45rem;
+        left: -64px;
+        transform: rotate(90deg) translateY(95px);
+        width: 33rem;
+        margin-left: 0;
+    }
+    
+    .rainbowRectangleSml { // Sml width
+        @include rainbowRectangleTablet();
+    }
+
+    .rainbowRectangleFull { // Full width
+        @include rainbowRectangle();
+        top: 13.5rem;
+        left: -4rem;
+        width: 27.75rem;
+        transform: rotate(90deg) translateY(95px);
+    }
+
+    .betaRainbowRectangle { //Beta component
+        @include rainbowRectangle();
+        top: 20.90rem;
+        left: -11.1rem;
+        width: 42rem;
+        margin-left: 0;
+        transform: rotate(90deg) translateY(95px);
+    }
+}
+// Desktop
+@media screen and (min-width: 1367px) {
+    .rainbowRectangleIndex {
+        top: 40rem;  
+    }
+
+    .rainbowRectangleSml {
+        top: 32rem;
+    }
+
+    .rainbowRectangleFull {
+        @include rainbowRectangle();
+        top: 0rem;
+        left: 0rem;
+        width: 35.15rem;
+        transform: rotate(180deg);
+    }
+}
+// Media Queries For Rectangle Component END
 
 //Features Section Check Mark
 .checkMark {
