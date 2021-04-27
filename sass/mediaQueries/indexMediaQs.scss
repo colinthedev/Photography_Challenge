@@ -179,28 +179,28 @@
     .mountainsContainer {
         grid-row: 5 / 6;
         grid-column: full-start / 6;
-        background-image: url("../../assets/stories/desktop/mountains.jpg");
+        background-image: url("/assets/stories/desktop/mountains.jpg");
         @include backgroundImagePropertiesTablet();
     }
 
     .cityScapeContainer {
         grid-row: 5 / 6;
         grid-column: 6 / full-end;
-        background-image: url("../../assets/stories/desktop/cityscapes.jpg");
+        background-image: url("/assets/stories/desktop/cityscapes.jpg");
         @include backgroundImagePropertiesTablet();
     }
 
     .daysVoyageContainer {
         grid-row: 6 / 7;
         grid-column: full-start / 6;
-        background-image: url("../../assets/stories/desktop/18-days-voyage.jpg");
+        background-image: url("/assets/stories/desktop/18-days-voyage.jpg");
         @include backgroundImagePropertiesTablet();
     }
 
     .architecturalsContainer {
         grid-row: 6 / 7;
         grid-column: 6 / full-end;
-        background-image: url("../../assets/stories/desktop/architecturals.jpg");
+        background-image: url("/assets/stories/desktop/architecturals.jpg");
         @include backgroundImagePropertiesTablet();
     }
     //IMG Read Story Section END
@@ -304,27 +304,27 @@
     //IMG Read Story Section
     .mountainsContainer {
         grid-column: full-start / 8;
-        background-image: url("../../assets/stories/desktop/mountains.jpg");
+        background-image: url("/assets/stories/desktop/mountains.jpg");
         @include backgroundImagePropertiesTablet();
     }
 
     .cityScapeContainer {
         grid-column: 8 / 15;
-        background-image: url("../../assets/stories/desktop/cityscapes.jpg");
+        background-image: url("/assets/stories/desktop/cityscapes.jpg");
         @include backgroundImagePropertiesTablet();
     }
 
     .daysVoyageContainer {
         grid-column: 15 / 22;
         grid-row: 5 / 6;
-        background-image: url("../../assets/stories/desktop/18-days-voyage.jpg");
+        background-image: url("/assets/stories/desktop/18-days-voyage.jpg");
         @include backgroundImagePropertiesTablet();
     }
 
     .architecturalsContainer {
         grid-column: 22 / full-end;
         grid-row: 5 / 6;
-        background-image: url("../../assets/stories/desktop/architecturals.jpg");
+        background-image: url("/assets/stories/desktop/architecturals.jpg");
         @include backgroundImagePropertiesTablet();
     }
     //IMG Read Story Section END
