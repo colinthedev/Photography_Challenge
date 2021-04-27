@@ -80,6 +80,6 @@
 .pricingBetaContainer {
     position: relative;
     grid-row: 9 / 10;
-    background-image: url(../../assets/shared/mobile/bg-beta.jpg);
+    background-image: url("../assets/shared/mobile/bg-beta.jpg");
     @include backgroundImageProperties();
 }

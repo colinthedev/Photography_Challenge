@@ -73,25 +73,25 @@
 //IMG Read Story Section
 .mountainsContainer {
     grid-row: 8 / 9;
-    background-image: url(../../assets/stories/mobile/mountains.jpg);
+    background-image: url("../assets/stories/mobile/mountains.jpg");
     @include backgroundImageProperties();
 }
 
 .cityScapeContainer {
     grid-row: 9 / 10;
-    background-image: url(../../assets/stories/mobile/cityscapes.jpg);
+    background-image: url("../assets/stories/mobile/cityscapes.jpg");
     @include backgroundImageProperties();
 }
 
 .daysVoyageContainer {
     grid-row: 10 / 11;
-    background-image: url(../../assets/stories/mobile/18-days-voyage.jpg);
+    background-image: url("../assets/stories/mobile/18-days-voyage.jpg");
     @include backgroundImageProperties();
 }
 
 .architecturalsContainer {
     grid-row: 11 / 12;
-    background-image: url(../../assets/stories/mobile/architecturals.jpg);
+    background-image: url("../assets/stories/mobile/architecturals.jpg");
     @include backgroundImageProperties();
 }
 //IMG Read Story Section END
