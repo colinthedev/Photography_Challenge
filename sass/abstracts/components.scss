@@ -208,23 +208,11 @@
 //Features Section Check Mark END
 
 //Footer Social Media Icons
-a.facebook:hover {
-    background-color: black!important;
-}
-
-img.iconContainer__icon.facebook:hover {
-    background-color: black!important;
-}
-
 .iconContainer__icon:hover {
-    background-color: black!important;
+    transform: scale(1.25) rotate(10deg);
 }
 
-.iconContainer a:hover {
-    background-color: black!important;
-}
-//Footer Social Media Icons
-
+//Footer nav links
 .footerLinksContainer__txt:hover {
     opacity: 0.3;
 }
