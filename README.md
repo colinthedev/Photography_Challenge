@@ -38,9 +38,7 @@ A few key features implemented include:
   - Stories
     - Features
       - Pricing
-
+      
 ## Folder Structure
 
 ![](assets/readme/photosnap-file-structure.png)
-      
-
