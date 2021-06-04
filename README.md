@@ -1,6 +1,6 @@
 # Photography_Challenge
 
-![](assets/readme/README-img.png)
+![](assets/readme/photosnap-README-thumbnail.png)
 
 ## About :point_down:
 
@@ -38,5 +38,9 @@ A few key features implemented include:
   - Stories
     - Features
       - Pricing
+
+## Folder Structure
+
+![](assets/readme/photosnap-file-structure.png)
       
 
