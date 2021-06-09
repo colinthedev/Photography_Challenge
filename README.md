@@ -1,13 +1,16 @@
 # Photography_Challenge
 
-![](assets/readme/README-img.png)
+![](assets/readme/photosnap-README-thumbnail.png)
 
 ## About :point_down:
 
 A four page photography site  
 <br>
 This project was created from scratch using grid for the main layout and **BEM** method.
->
+
+Built with a mobile first approach.
+<br>
+<br>
 Deployed using [Github-pages](https://colinthedev.github.io/Photography_Challenge/)
 
 ## Final Considerations
@@ -39,4 +42,6 @@ A few key features implemented include:
     - Features
       - Pricing
       
+## Folder Structure
 
+![](assets/readme/photosnap-file-structure.png)
