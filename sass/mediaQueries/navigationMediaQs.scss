@@ -69,3 +69,12 @@
         margin: auto;
     }
 }
+
+//Supersize Desktop
+@media screen and (min-width: 2001px) {
+    .navInviteBtn {
+        height: 4rem;
+        width: 16rem;
+        margin: auto auto auto 2.1rem;
+    }
+}

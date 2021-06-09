@@ -147,6 +147,24 @@
     margin-left: 3.5rem;
 }
 
+//Features Section Check Mark
+.checkMark {
+    display: block;
+    height: 12px;
+    width: 16px;
+}
+//Features Section Check Mark END
+
+//Footer Social Media Icons
+.iconContainer__icon:hover {
+    transform: scale(1.25) rotate(10deg);
+}
+
+//Footer nav links
+.footerLinksContainer__txt:hover {
+    opacity: 0.3;
+}
+
 // Media Queries For Rectangle Component
 // Tablet
 @media screen and (min-width: 768px) {
@@ -173,8 +191,8 @@
     .betaRainbowRectangle { //Beta component
         @include rainbowRectangle();
         top: 20.90rem;
-        left: -11.1rem;
-        width: 42rem;
+        left: -11.25rem;
+        width: 42.25rem;
         margin-left: 0;
         transform: rotate(90deg) translateY(95px);
     }
@@ -193,26 +211,20 @@
         @include rainbowRectangle();
         top: 0rem;
         left: 0rem;
-        width: 35.15rem;
+        // width: 35.15rem;
+        width: 100%;
         transform: rotate(180deg);
     }
 }
 // Media Queries For Rectangle Component END
 
-//Features Section Check Mark
-.checkMark {
-    display: block;
-    height: 12px;
-    width: 16px;
-}
-//Features Section Check Mark END
+//Supersize Desktop
+@media screen and (min-width: 2001px) {
+    .rainbowRectangleIndex {
+        display: none;
+    }
 
-//Footer Social Media Icons
-.iconContainer__icon:hover {
-    transform: scale(1.25) rotate(10deg);
-}
-
-//Footer nav links
-.footerLinksContainer__txt:hover {
-    opacity: 0.3;
+    .rainbowRectangleSml {
+        display: none;
+    }
 }

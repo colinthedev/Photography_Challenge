@@ -14,5 +14,6 @@
     position: relative;
     grid-row: 5 / 6;
     background-image: url("../assets/shared/mobile/bg-beta.jpg");
+    max-height: 42.2rem;
     @include backgroundImageProperties();
 }

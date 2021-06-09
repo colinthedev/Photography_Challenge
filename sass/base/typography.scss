@@ -21,7 +21,8 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 3.75rem;
     line-height: 4.8rem;
-    letter-spacing: 4.17px;
+    // letter-spacing: 4.17px;
+    letter-spacing: .25px;
     font-weight: 700;
     color: var(--color-text-black);
 }
@@ -30,7 +31,8 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 3.25rem;
     line-height: 4.8rem;
-    letter-spacing: 4.17px;
+    // letter-spacing: 4.17px;
+    letter-spacing: .25px;
     font-weight: 700;
     color: var(--color-text-white);
 }
@@ -39,7 +41,8 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 3.25rem;
     line-height: 4rem;
-    letter-spacing: 3.33px;
+    // letter-spacing: 3.33px;
+    letter-spacing: .25px;
     font-weight: 700;
     color: var(--color-text-white);
 }
@@ -259,6 +262,7 @@
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 19.5px;
+    min-width: 25rem;
     color: var(--color-text-white);
     opacity: .5;
 }

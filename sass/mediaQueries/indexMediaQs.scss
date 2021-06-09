@@ -59,12 +59,14 @@
     }
 
     //Typography
-    .headingXLargeWht {
-        font-size: 4rem;
-    }
-
+    .headingXLargeWht,
     .headingXLargeBlk {
         font-size: 4rem;
+        letter-spacing: 3px;
+    }
+
+    .headingLargeWht {
+        letter-spacing: 3px;
     }
     //Typography END
 
@@ -358,4 +360,15 @@
         margin: 17.3rem 12rem 17.3rem 11.2rem;
     }
 
+}
+
+//Supersize Desktop
+@media screen and (min-width: 2001px) {
+    .indexContainer,
+    .storiesContainer,
+    .featuresContainer,
+    .pricingContainer {
+        max-width: 2001px;
+        margin: auto;
+    }
 }
