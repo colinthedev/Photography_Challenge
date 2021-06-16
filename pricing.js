@@ -1,5 +1,4 @@
 'use strict';
-
 // Toggle Button Pricing Section
     // Button
     let button = document.querySelector('.toggleWrapper__button');
