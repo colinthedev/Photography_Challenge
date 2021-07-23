@@ -121,7 +121,7 @@ gsap.registerPlugin(ScrollTrigger);
         .from('.basicPricePlanContainer', {...pricingDefaults})
         .from('.proPricePlanContainer', {...pricingDefaults}, "+=.15")
         .from('.businessPricePlanContainer', {...pricingDefaults}, "-=2.15")
-        .from('.slideLeft', {x: 400, opacity: 0, ease: "sine.out"}, "+=.05");
+        .from('.slideLeft', {x: 400, opacity: 0, ease: "sine.out"}, "-=.55");
 
 
 
