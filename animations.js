@@ -92,7 +92,7 @@ gsap.registerPlugin(ScrollTrigger);
     let indexSvgTl = gsap.timeline({
         scrollTrigger: {
             trigger: '.contentWrapperSVG',
-            start: "top bottom"
+            start: "bottom bottom"
         },
     });
  
