@@ -1042,6 +1042,35 @@ template {
   .navigation.active__listWrapper-navList:nth-child(2) {
     margin: 2rem auto 2rem; }
 
+.navInviteBtn {
+  transform: translateX(200px);
+  opacity: 0; }
+
+.topImgContainer {
+  opacity: 0; }
+
+.topTxtContainer {
+  opacity: 0; }
+
+.rainbowAnimation {
+  opacity: 0; }
+
+.headingXLargeWht {
+  transform: translateX(150px);
+  opacity: 0; }
+
+.ctaAnimation {
+  transform: translateX(150px);
+  opacity: 0; }
+
+.rowSml {
+  transform: translateX(150px);
+  opacity: 0; }
+
+.storiesAnimation {
+  transform: translateX(150px);
+  opacity: 0; }
+
 .featuresContainer {
   display: grid;
   background: var(--color-background-white);

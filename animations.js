@@ -14,20 +14,22 @@ gsap.registerPlugin(ScrollTrigger);
     window.onload = function() {
         if (window.location.href.indexOf('stories.html') > -1) {
         // Stories
-            gsap.from('.storiesAnimation', {x: 150, opacity: 0, duration: 2, delay: .5, ease: "sine.out"});
-            gsap.from('.navInviteBtn', {x: 200, opacity: 0, duration: 2, ease: "back.out(1.8)"});
+            gsap.to('.storiesAnimation', {x: 0, opacity: 1, duration: 2, delay: .5, ease: "sine.out"});
+            gsap.to('.navInviteBtn', {x: 0, opacity: 1, duration: 2, ease: "back.out(1.8)"});
 
         } else {
         // Index, features, pricing
-            gsap.from('.navInviteBtn', {x: 200, opacity: 0, duration: 2, ease: "back.out(1.8)"});
-            gsap.from('.topImgContainer', {x: 1000, opacity: 0, duration: 1.75, delay: 1.10, ease: "circ.out"});
-            gsap.from('.topTxtContainer', {x: -1000, opacity: 0, duration: 1.75, delay: 1.15, ease: "circ.out"});
-            gsap.from('.rainbowAnimation', {opacity: 0, duration: 2, delay: 3.10, ease: "circ.out"});
+            gsap.to('.navInviteBtn', {x: 0, opacity: 1, duration: 2, ease: "back.out(1.8)"});
+            gsap.from('.topImgContainer', {x: 2000, duration: 1.75, delay: 1.10, ease: "circ.out"});
+            gsap.to('.topImgContainer', {opacity: 1}, "-=6"); // Delay the opacity on inital page visit
+            gsap.from('.topTxtContainer', {x: -1000, duration: 1.75, delay: 1.15, ease: "circ.out"});
+            gsap.to('.topTxtContainer', {opacity: 1}, "-=6"); // Delay the opacity on inital page visit
+            gsap.to('.rainbowAnimation', {opacity: 1, duration: 2, delay: 3.10, ease: "circ.out"});
         
-            let heroSection = gsap.timeline ({ defaults: {x: 150, opacity: 0, duration: 2, delay: 3.05, ease: "circ.out", }})
-                .from('.headingXLargeWht', {})
-                .from('.ctaAnimation', {}, "-=4.35")
-                .from('.rowSml', {}, "-=4.35");
+            let heroSection = gsap.timeline ({ defaults: {x: 0, opacity: 1, duration: 2, delay: 3.05, ease: "circ.out", }})
+                .to('.headingXLargeWht', {})
+                .to('.ctaAnimation', {}, "-=4.35")
+                .to('.rowSml', {}, "-=4.35");
             return heroSection;
         };
     };

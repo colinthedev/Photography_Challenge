@@ -1,0 +1,40 @@
+
+// Hide on initial page visit so animation starts smooth
+    // Index / Features / Pricing
+        .navInviteBtn {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+
+        .topImgContainer {
+            opacity: 0;
+        }
+
+        .topTxtContainer {
+            opacity: 0;
+        }
+
+        .rainbowAnimation {
+            opacity: 0;
+        }
+
+        .headingXLargeWht {
+            transform: translateX(150px);
+            opacity: 0;
+        }
+
+        .ctaAnimation {
+            transform: translateX(150px);
+            opacity: 0;
+        }
+
+        .rowSml {
+            transform: translateX(150px);
+            opacity: 0;
+        }
+
+    // Stories
+        .storiesAnimation {
+            transform: translateX(150px);
+            opacity: 0;
+        }
