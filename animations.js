@@ -19,14 +19,14 @@ gsap.registerPlugin(ScrollTrigger);
 
         } else {
         // Index, features, pricing
-            gsap.to('.navInviteBtn', {x: 0, opacity: 1, duration: 2, ease: "back.out(1.8)"});
+            gsap.to('.navInviteBtn', {x: 0, opacity: 1, duration: 1.5, ease: "back.out(1.8)"});
             gsap.from('.topImgContainer', {x: 2000, duration: 1.75, delay: 1.10, ease: "circ.out"});
-            gsap.to('.topImgContainer', {opacity: 1}, "-=6"); // Delay the opacity on inital page visit
+            gsap.to('.topImgContainer', {opacity: 1}, "-=5.85"); // Delay the opacity on inital page visit
             gsap.from('.topTxtContainer', {x: -1000, duration: 1.75, delay: 1.15, ease: "circ.out"});
             gsap.to('.topTxtContainer', {opacity: 1}, "-=6"); // Delay the opacity on inital page visit
             gsap.to('.rainbowAnimation', {opacity: 1, duration: 2, delay: 3.10, ease: "circ.out"});
         
-            let heroSection = gsap.timeline ({ defaults: {x: 0, opacity: 1, duration: 2, delay: 3.05, ease: "circ.out", }})
+            let heroSection = gsap.timeline ({ defaults: {x: 0, opacity: 1, duration: 2, delay: 2.5, ease: "circ.out", }})
                 .to('.headingXLargeWht', {})
                 .to('.ctaAnimation', {}, "-=4.35")
                 .to('.rowSml', {}, "-=4.35");
@@ -86,7 +86,7 @@ gsap.registerPlugin(ScrollTrigger);
         y: 100, 
         opacity: 0, 
         ease: "sine.out",
-        duration: 1.05
+        duration: .70
     }
 
     let indexSvgTl = gsap.timeline({
